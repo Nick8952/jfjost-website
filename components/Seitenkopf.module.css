@@ -1,6 +1,6 @@
 .kopf {
   background: var(--beton);
-  padding-block: var(--raum-7) var(--raum-7);
+  padding-block: var(--raum-6) var(--raum-6);
   border-bottom: var(--strich) solid var(--linie);
 }
 .innen {
@@ -26,10 +26,16 @@
   margin-top: var(--raum-2);
 }
 .einleitung {
-  margin-top: var(--raum-5);
+  margin-top: var(--raum-4);
   max-width: var(--breite-lesen);
-  font-size: 1.1875rem;
+  font-size: 1.0625rem;
   color: var(--tinte-2);
+}
+@media (min-width: 64rem) {
+  .einleitung {
+    margin-top: var(--raum-5);
+    font-size: 1.1875rem;
+  }
 }
 .bild {
   border: var(--strich-stark) solid var(--tinte);

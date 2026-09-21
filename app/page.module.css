@@ -19,21 +19,35 @@
 }
 .heroTitel {
   margin-top: var(--raum-3);
-  max-width: 12ch;
   text-transform: uppercase;
   letter-spacing: 0.005em;
 }
+@media (min-width: 64rem) {
+  .heroTitel {
+    max-width: 12ch;
+  }
+}
 .heroUntertitel {
-  margin-top: var(--raum-5);
+  margin-top: var(--raum-4);
   max-width: 52ch;
-  font-size: 1.125rem;
+  font-size: 1.0625rem;
   color: var(--tinte-2);
 }
 .heroAktionen {
-  margin-top: var(--raum-6);
+  margin-top: var(--raum-5);
   display: flex;
   flex-wrap: wrap;
-  gap: var(--raum-3);
+  gap: var(--raum-2);
+}
+@media (min-width: 64rem) {
+  .heroUntertitel {
+    margin-top: var(--raum-5);
+    font-size: 1.125rem;
+  }
+  .heroAktionen {
+    margin-top: var(--raum-6);
+    gap: var(--raum-3);
+  }
 }
 .heroBild {
   position: relative;
@@ -56,17 +70,26 @@
   text-transform: uppercase;
 }
 .fakten {
-  display: flex;
-  flex-wrap: wrap;
-  gap: var(--raum-2) var(--raum-5);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--raum-2) var(--raum-4);
   padding-block: var(--raum-4);
   border-top: var(--strich) solid var(--linie);
   font-family: var(--schrift-display);
-  font-size: 1rem;
+  font-size: 0.875rem;
+  line-height: 1.3;
   font-weight: 600;
   letter-spacing: 0.1em;
   text-transform: uppercase;
   color: var(--tinte-2);
+}
+@media (min-width: 48rem) {
+  .fakten {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--raum-2) var(--raum-5);
+    font-size: 1rem;
+  }
 }
 .fakten span::before {
   content: "";
@@ -102,9 +125,8 @@
 .tafel {
   display: flex;
   flex-direction: column;
-  gap: var(--raum-3);
-  min-height: 18rem;
-  padding: var(--raum-5);
+  gap: var(--raum-2);
+  padding: var(--raum-4);
   border: var(--strich-stark) solid var(--tinte);
   background: var(--papier);
   transition: box-shadow var(--dauer-kurz) var(--kurve), transform var(--dauer-kurz) var(--kurve);
@@ -112,6 +134,13 @@
 .tafel:hover {
   box-shadow: 8px 8px 0 var(--gelb);
   transform: translate(-2px, -2px);
+}
+@media (min-width: 40rem) {
+  .tafel {
+    gap: var(--raum-3);
+    min-height: 18rem;
+    padding: var(--raum-5);
+  }
 }
 .tafelGelb {
   background: var(--gelb);
@@ -127,7 +156,7 @@
   color: var(--tinte-2);
 }
 .tafelTitel {
-  font-size: 2rem;
+  font-size: clamp(1.625rem, 6vw, 2rem);
   text-transform: uppercase;
   letter-spacing: 0.01em;
 }
@@ -170,15 +199,15 @@
 }
 .galerie {
   display: grid;
-  gap: var(--raum-4);
-  grid-template-columns: 1fr;
+  gap: var(--raum-3);
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+.galerieGross {
+  grid-column: 1 / -1;
 }
 @media (min-width: 40rem) {
   .galerie {
-    grid-template-columns: repeat(2, 1fr);
-  }
-  .galerieGross {
-    grid-column: 1 / -1;
+    gap: var(--raum-4);
   }
 }
 @media (min-width: 64rem) {
@@ -197,7 +226,13 @@
   display: flex;
   flex-direction: column;
   margin-top: var(--raum-2);
-  font-size: var(--groesse-klein);
+  font-size: var(--groesse-mini);
+  line-height: 1.4;
+}
+@media (min-width: 40rem) {
+  .legende {
+    font-size: var(--groesse-klein);
+  }
 }
 .legendeTitel {
   font-weight: 600;

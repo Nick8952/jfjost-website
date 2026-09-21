@@ -18,7 +18,9 @@
 
 ## Breakpoints
 
-- < 40 rem (640 px): einspaltig, Tafeln 1 Spalte, Formularfelder untereinander.
+- < 40 rem (640 px): Tafeln 1 Spalte ohne Mindesthöhe, Team und Bilderwand **2 Spalten**, Fakten 2 Spalten,
+  Hero-Titel ohne Zeichenbegrenzung, Consent-Banner kompakt (2+1 Knöpfe, max. 60 dvh), Fussnavigation 2 Spalten,
+  Formularfelder untereinander.
 - ≥ 40 rem: Tafeln 2 Spalten, Bilderwand 2 Spalten, Formular 2 Spalten, Fuss 2 Spalten.
 - ≥ 48 rem (768 px): Leistungen mit 6-rem-Nummernspalte, Zeitstrahl 2-spaltig, Jahre 4 Spalten.
 - ≥ 64 rem (1024 px): Desktop-Navigation mit Ausklappmenüs, Telefon-Knopf im Kopf, Hero 2-spaltig,

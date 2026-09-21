@@ -18,12 +18,18 @@
 }
 .raster {
   display: grid;
-  gap: var(--raum-6) var(--raum-5);
-  grid-template-columns: 1fr;
+  gap: var(--raum-5) var(--raum-4);
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+.adresse {
+  grid-column: 1 / -1;
 }
 @media (min-width: 40rem) {
   .raster {
-    grid-template-columns: repeat(2, 1fr);
+    gap: var(--raum-6) var(--raum-5);
+  }
+  .adresse {
+    grid-column: auto;
   }
 }
 @media (min-width: 64rem) {

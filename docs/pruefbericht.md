@@ -91,6 +91,15 @@ Nicht geprüft: Screenreader-Ausgabe (VoiceOver/NVDA), 200-%-Zoom auf echten Ger
   Panel), `aria-controls` ohne Leerzeichen, keine doppelten IDs auf der Einstellungsseite,
   Consent-Audit identisch zum ersten Lauf.
 
+## Mobile-Nacharbeit (21.09.2026, zweite Runde)
+
+Sichtprüfung in Bildschirmgrösse (390 × 844) ergab: Banner nahm ~45 % der Höhe ein, Team eine
+Person je Zeile (14'500 px), Hero-Titel 5 Zeilen, Tafeln mit Leerraum, Bilderwand einspaltig.
+Behoben: kompakter Banner, Team/Bilderwand/Fakten zweispaltig, Tafeln ohne Mindesthöhe, kleinere
+Einleitungen, Fuss zweispaltig, Silbentrennung für lange Funktionsbezeichnungen (Überlauf bei 360 px).
+Seitenhöhen bei 390 px danach: Start 6'443 px (vorher 8'612), Team 8'430 (vorher 14'494). Audit
+360/390/768: kein Überlauf, keine Klickfläche < 44 px.
+
 ## Nicht geprüft / Grenzen
 
 Echte Geräte (iOS Safari, Android), Screenreader, Lighthouse-Werte, Vercel-Build, Sanity-Studio

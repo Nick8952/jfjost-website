@@ -16,7 +16,7 @@
   scrollbar-color: var(--linie-stark) transparent;
 }
 .foto {
-  flex: 0 0 min(85vw, 30rem);
+  flex: 0 0 min(78vw, 30rem);
   scroll-snap-align: start;
 }
 .foto > figure > span {

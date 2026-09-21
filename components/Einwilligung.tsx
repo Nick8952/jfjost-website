@@ -166,8 +166,8 @@ export function Einwilligungsbanner() {
                 Externe Inhalte
               </h2>
               <p>
-                Diese Website setzt keine eigenen Cookies. Die Angebotslisten von homegate.ch (Mieten, Kaufen) und die Karte von Google Maps (Kontakt) werden nur mit Ihrer Zustimmung geladen; dabei erhalten diese
-                Anbieter Ihre IP-Adresse und setzen Cookies. <Link href="/datenschutz/" className="textlink">Datenschutzerklärung</Link>
+                Keine eigenen Cookies. Die Angebotslisten von homegate.ch und die Karte von Google Maps laden erst mit Ihrer Zustimmung; diese Anbieter erhalten dann Ihre IP-Adresse und setzen Cookies.{" "}
+                <Link href="/datenschutz/" className="textlink">Datenschutzerklärung</Link>
               </p>
             </div>
             <div className={stile.bannerAktionen}>
