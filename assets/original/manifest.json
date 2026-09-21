@@ -1,0 +1,888 @@
+{
+  "stand": "2026-09-21",
+  "hinweis": "Alle Dateien stammen von der öffentlichen Website www.jfjost.ch (Download mit Freigabe von Nick am 21.09.2026). Nutzungsrechte liegen bei J.F. Jost & Co bzw. den jeweiligen Fotografen; Freigabe durch den Kunden vor Go-Live einholen.",
+  "dateien": [
+    {
+      "quelle": "https://www.jfjost.ch/uploads/files/Startseite/slider_lilie_01.jpg",
+      "datei": "startseite/slider_lilie_01.jpg",
+      "http": 200,
+      "bytes": 292866,
+      "typ": "image/jpeg"
+    },
+    {
+      "quelle": "https://www.jfjost.ch/uploads/files/Startseite/kueche_mattenweg.jpg",
+      "datei": "startseite/kueche_mattenweg.jpg",
+      "http": 200,
+      "bytes": 352726,
+      "typ": "image/jpeg"
+    },
+    {
+      "quelle": "https://www.jfjost.ch/uploads/files/Startseite/dusche_uetliberg.jpg",
+      "datei": "startseite/dusche_uetliberg.jpg",
+      "http": 200,
+      "bytes": 324258,
+      "typ": "image/jpeg"
+    },
+    {
+      "quelle": "https://www.jfjost.ch/uploads/files/Startseite/slider_am_furtbach_01.jpg",
+      "datei": "startseite/slider_am_furtbach_01.jpg",
+      "http": 200,
+      "bytes": 340185,
+      "typ": "image/jpeg"
+    },
+    {
+      "quelle": "https://www.jfjost.ch/uploads/files/Startseite/slider_baechaustrasse_01.jpg",
+      "datei": "startseite/slider_baechaustrasse_01.jpg",
+      "http": 200,
+      "bytes": 466098,
+      "typ": "image/jpeg"
+    },
+    {
+      "quelle": "https://www.jfjost.ch/uploads/files/Startseite/slider_hofackerstrasse_01.jpg",
+      "datei": "startseite/slider_hofackerstrasse_01.jpg",
+      "http": 200,
+      "bytes": 312192,
+      "typ": "image/jpeg"
+    },
+    {
+      "quelle": "https://www.jfjost.ch/uploads/files/Startseite/langackerstr_schlieren2.jpg",
+      "datei": "startseite/langackerstr_schlieren2.jpg",
+      "http": 200,
+      "bytes": 280674,
+      "typ": "image/jpeg"
+    },
+    {
+      "quelle": "https://www.jfjost.ch/uploads/files/DSC_0422 2.JPG",
+      "datei": "team/DSC_0422 2.JPG",
+      "http": 200,
+      "bytes": 2114766,
+      "typ": "image/jpeg"
+    },
+    {
+      "quelle": "https://www.jfjost.ch/uploads/files/DianaMenegazzo.jpg",
+      "datei": "team/DianaMenegazzo.jpg",
+      "http": 200,
+      "bytes": 2917071,
+      "typ": "image/jpeg"
+    },
+    {
+      "quelle": "https://www.jfjost.ch/uploads/files/Eric.jpg",
+      "datei": "team/Eric.jpg",
+      "http": 200,
+      "bytes": 47018,
+      "typ": "image/jpeg"
+    },
+    {
+      "quelle": "https://www.jfjost.ch/uploads/files/Paparo_Amelia_13.jpg",
+      "datei": "team/Paparo_Amelia_13.jpg",
+      "http": 200,
+      "bytes": 681570,
+      "typ": "image/jpeg"
+    },
+    {
+      "quelle": "https://www.jfjost.ch/uploads/files/ShankerShimon.jpg",
+      "datei": "team/ShankerShimon.jpg",
+      "http": 200,
+      "bytes": 3117267,
+      "typ": "image/jpeg"
+    },
+    {
+      "quelle": "https://www.jfjost.ch/uploads/files/Team/Andre_Laib.jpg",
+      "datei": "team/Andre_Laib.jpg",
+      "http": 200,
+      "bytes": 139594,
+      "typ": "image/jpeg"
+    },
+    {
+      "quelle": "https://www.jfjost.ch/uploads/files/Team/Bauteam.JPG",
+      "datei": "team/Bauteam.JPG",
+      "http": 200,
+      "bytes": 80641,
+      "typ": "image/jpeg"
+    },
+    {
+      "quelle": "https://www.jfjost.ch/uploads/files/Team/Diego Albertanti.jpg",
+      "datei": "team/Diego Albertanti.jpg",
+      "http": 200,
+      "bytes": 40056,
+      "typ": "image/jpeg"
+    },
+    {
+      "quelle": "https://www.jfjost.ch/uploads/files/Team/Ingrid_.jpg",
+      "datei": "team/Ingrid_.jpg",
+      "http": 200,
+      "bytes": 2792898,
+      "typ": "image/jpeg"
+    },
+    {
+      "quelle": "https://www.jfjost.ch/uploads/files/Team/Jacky Meyer.JPG",
+      "datei": "team/Jacky Meyer.JPG",
+      "http": 200,
+      "bytes": 259167,
+      "typ": "image/jpeg"
+    },
+    {
+      "quelle": "https://www.jfjost.ch/uploads/files/Team/JoseBonifacio.jpg",
+      "datei": "team/JoseBonifacio.jpg",
+      "http": 200,
+      "bytes": 2935426,
+      "typ": "image/jpeg"
+    },
+    {
+      "quelle": "https://www.jfjost.ch/uploads/files/Team/Jsabella Kunz.jpg",
+      "datei": "team/Jsabella Kunz.jpg",
+      "http": 200,
+      "bytes": 59478,
+      "typ": "image/jpeg"
+    },
+    {
+      "quelle": "https://www.jfjost.ch/uploads/files/Team/Muehlemann_Urs hoch.jpg",
+      "datei": "team/Muehlemann_Urs hoch.jpg",
+      "http": 200,
+      "bytes": 25535,
+      "typ": "image/jpeg"
+    },
+    {
+      "quelle": "https://www.jfjost.ch/uploads/files/Team/RetoMariani.jpg",
+      "datei": "team/RetoMariani.jpg",
+      "http": 200,
+      "bytes": 3104876,
+      "typ": "image/jpeg"
+    },
+    {
+      "quelle": "https://www.jfjost.ch/uploads/files/Team/Safet_Gjura.jpg",
+      "datei": "team/Safet_Gjura.jpg",
+      "http": 200,
+      "bytes": 51282,
+      "typ": "image/jpeg"
+    },
+    {
+      "quelle": "https://www.jfjost.ch/uploads/files/Team/SandraRibalta.jpg",
+      "datei": "team/SandraRibalta.jpg",
+      "http": 200,
+      "bytes": 3074523,
+      "typ": "image/jpeg"
+    },
+    {
+      "quelle": "https://www.jfjost.ch/uploads/files/Team/Visar Rexhepi.jpg",
+      "datei": "team/Visar Rexhepi.jpg",
+      "http": 200,
+      "bytes": 43877,
+      "typ": "image/jpeg"
+    },
+    {
+      "quelle": "https://www.jfjost.ch/uploads/files/Veliju_Enes.jpg",
+      "datei": "team/Veliju_Enes.jpg",
+      "http": 200,
+      "bytes": 770104,
+      "typ": "image/jpeg"
+    },
+    {
+      "quelle": "https://www.jfjost.ch/referenzen/17/021.jpg",
+      "datei": "referenzen/17_021.jpg",
+      "http": 200,
+      "bytes": 169022,
+      "typ": "image/jpeg"
+    },
+    {
+      "quelle": "https://www.jfjost.ch/referenzen/17/022.jpg",
+      "datei": "referenzen/17_022.jpg",
+      "http": 200,
+      "bytes": 152803,
+      "typ": "image/jpeg"
+    },
+    {
+      "quelle": "https://www.jfjost.ch/referenzen/17/023.jpg",
+      "datei": "referenzen/17_023.jpg",
+      "http": 200,
+      "bytes": 161896,
+      "typ": "image/jpeg"
+    },
+    {
+      "quelle": "https://www.jfjost.ch/referenzen/17/028.jpg",
+      "datei": "referenzen/17_028.jpg",
+      "http": 200,
+      "bytes": 169882,
+      "typ": "image/jpeg"
+    },
+    {
+      "quelle": "https://www.jfjost.ch/referenzen/17/029.jpg",
+      "datei": "referenzen/17_029.jpg",
+      "http": 200,
+      "bytes": 156929,
+      "typ": "image/jpeg"
+    },
+    {
+      "quelle": "https://www.jfjost.ch/referenzen/18/002.jpg",
+      "datei": "referenzen/18_002.jpg",
+      "http": 200,
+      "bytes": 143773,
+      "typ": "image/jpeg"
+    },
+    {
+      "quelle": "https://www.jfjost.ch/referenzen/18/003.jpg",
+      "datei": "referenzen/18_003.jpg",
+      "http": 200,
+      "bytes": 180649,
+      "typ": "image/jpeg"
+    },
+    {
+      "quelle": "https://www.jfjost.ch/referenzen/18/017.jpg",
+      "datei": "referenzen/18_017.jpg",
+      "http": 200,
+      "bytes": 262355,
+      "typ": "image/jpeg"
+    },
+    {
+      "quelle": "https://www.jfjost.ch/referenzen/18/028.jpg",
+      "datei": "referenzen/18_028.jpg",
+      "http": 200,
+      "bytes": 161717,
+      "typ": "image/jpeg"
+    },
+    {
+      "quelle": "https://www.jfjost.ch/referenzen/19/img_0244.jpg",
+      "datei": "referenzen/19_img_0244.jpg",
+      "http": 200,
+      "bytes": 189466,
+      "typ": "image/jpeg"
+    },
+    {
+      "quelle": "https://www.jfjost.ch/referenzen/19/img_6906.jpg",
+      "datei": "referenzen/19_img_6906.jpg",
+      "http": 200,
+      "bytes": 167614,
+      "typ": "image/jpeg"
+    },
+    {
+      "quelle": "https://www.jfjost.ch/referenzen/19/img_8881.jpg",
+      "datei": "referenzen/19_img_8881.jpg",
+      "http": 200,
+      "bytes": 184887,
+      "typ": "image/jpeg"
+    },
+    {
+      "quelle": "https://www.jfjost.ch/referenzen/19/img_8921.jpg",
+      "datei": "referenzen/19_img_8921.jpg",
+      "http": 200,
+      "bytes": 231841,
+      "typ": "image/jpeg"
+    },
+    {
+      "quelle": "https://www.jfjost.ch/referenzen/19/img_9080.jpg",
+      "datei": "referenzen/19_img_9080.jpg",
+      "http": 200,
+      "bytes": 179536,
+      "typ": "image/jpeg"
+    },
+    {
+      "quelle": "https://www.jfjost.ch/referenzen/19/img_9089.jpg",
+      "datei": "referenzen/19_img_9089.jpg",
+      "http": 200,
+      "bytes": 244400,
+      "typ": "image/jpeg"
+    },
+    {
+      "quelle": "https://www.jfjost.ch/referenzen/19/img_9090.jpg",
+      "datei": "referenzen/19_img_9090.jpg",
+      "http": 200,
+      "bytes": 302790,
+      "typ": "image/jpeg"
+    },
+    {
+      "quelle": "https://www.jfjost.ch/referenzen/20/006-3.jpg",
+      "datei": "referenzen/20_006-3.jpg",
+      "http": 200,
+      "bytes": 159032,
+      "typ": "image/jpeg"
+    },
+    {
+      "quelle": "https://www.jfjost.ch/referenzen/20/1269.jpg",
+      "datei": "referenzen/20_1269.jpg",
+      "http": 200,
+      "bytes": 163248,
+      "typ": "image/jpeg"
+    },
+    {
+      "quelle": "https://www.jfjost.ch/referenzen/20/1270.jpg",
+      "datei": "referenzen/20_1270.jpg",
+      "http": 200,
+      "bytes": 157567,
+      "typ": "image/jpeg"
+    },
+    {
+      "quelle": "https://www.jfjost.ch/referenzen/20/1271.jpg",
+      "datei": "referenzen/20_1271.jpg",
+      "http": 200,
+      "bytes": 155035,
+      "typ": "image/jpeg"
+    },
+    {
+      "quelle": "https://www.jfjost.ch/referenzen/20/1271_2.jpg",
+      "datei": "referenzen/20_1271_2.jpg",
+      "http": 200,
+      "bytes": 154349,
+      "typ": "image/jpeg"
+    },
+    {
+      "quelle": "https://www.jfjost.ch/referenzen/21/001-2.jpg",
+      "datei": "referenzen/21_001-2.jpg",
+      "http": 200,
+      "bytes": 283314,
+      "typ": "image/jpeg"
+    },
+    {
+      "quelle": "https://www.jfjost.ch/referenzen/21/001.jpg",
+      "datei": "referenzen/21_001.jpg",
+      "http": 200,
+      "bytes": 361614,
+      "typ": "image/jpeg"
+    },
+    {
+      "quelle": "https://www.jfjost.ch/referenzen/21/005.jpg",
+      "datei": "referenzen/21_005.jpg",
+      "http": 200,
+      "bytes": 245470,
+      "typ": "image/jpeg"
+    },
+    {
+      "quelle": "https://www.jfjost.ch/referenzen/21/008.jpg",
+      "datei": "referenzen/21_008.jpg",
+      "http": 200,
+      "bytes": 235877,
+      "typ": "image/jpeg"
+    },
+    {
+      "quelle": "https://www.jfjost.ch/referenzen/21/009.jpg",
+      "datei": "referenzen/21_009.jpg",
+      "http": 200,
+      "bytes": 266297,
+      "typ": "image/jpeg"
+    },
+    {
+      "quelle": "https://www.jfjost.ch/referenzen/21/015.jpg",
+      "datei": "referenzen/21_015.jpg",
+      "http": 200,
+      "bytes": 274381,
+      "typ": "image/jpeg"
+    },
+    {
+      "quelle": "https://www.jfjost.ch/referenzen/21/022.jpg",
+      "datei": "referenzen/21_022.jpg",
+      "http": 200,
+      "bytes": 231376,
+      "typ": "image/jpeg"
+    },
+    {
+      "quelle": "https://www.jfjost.ch/referenzen/26/006.jpg",
+      "datei": "referenzen/26_006.jpg",
+      "http": 200,
+      "bytes": 153112,
+      "typ": "image/jpeg"
+    },
+    {
+      "quelle": "https://www.jfjost.ch/referenzen/26/007.jpg",
+      "datei": "referenzen/26_007.jpg",
+      "http": 200,
+      "bytes": 154946,
+      "typ": "image/jpeg"
+    },
+    {
+      "quelle": "https://www.jfjost.ch/referenzen/26/014.jpg",
+      "datei": "referenzen/26_014.jpg",
+      "http": 200,
+      "bytes": 172513,
+      "typ": "image/jpeg"
+    },
+    {
+      "quelle": "https://www.jfjost.ch/referenzen/26/015.jpg",
+      "datei": "referenzen/26_015.jpg",
+      "http": 200,
+      "bytes": 185319,
+      "typ": "image/jpeg"
+    },
+    {
+      "quelle": "https://www.jfjost.ch/referenzen/26/016.jpg",
+      "datei": "referenzen/26_016.jpg",
+      "http": 200,
+      "bytes": 147623,
+      "typ": "image/jpeg"
+    },
+    {
+      "quelle": "https://www.jfjost.ch/referenzen/27/002.jpg",
+      "datei": "referenzen/27_002.jpg",
+      "http": 200,
+      "bytes": 269263,
+      "typ": "image/jpeg"
+    },
+    {
+      "quelle": "https://www.jfjost.ch/referenzen/27/003.jpg",
+      "datei": "referenzen/27_003.jpg",
+      "http": 200,
+      "bytes": 202917,
+      "typ": "image/jpeg"
+    },
+    {
+      "quelle": "https://www.jfjost.ch/referenzen/27/004.jpg",
+      "datei": "referenzen/27_004.jpg",
+      "http": 200,
+      "bytes": 198348,
+      "typ": "image/jpeg"
+    },
+    {
+      "quelle": "https://www.jfjost.ch/referenzen/27/005.jpg",
+      "datei": "referenzen/27_005.jpg",
+      "http": 200,
+      "bytes": 213207,
+      "typ": "image/jpeg"
+    },
+    {
+      "quelle": "https://www.jfjost.ch/referenzen/27/009.jpg",
+      "datei": "referenzen/27_009.jpg",
+      "http": 200,
+      "bytes": 210640,
+      "typ": "image/jpeg"
+    },
+    {
+      "quelle": "https://www.jfjost.ch/referenzen/27/010.jpg",
+      "datei": "referenzen/27_010.jpg",
+      "http": 200,
+      "bytes": 198729,
+      "typ": "image/jpeg"
+    },
+    {
+      "quelle": "https://www.jfjost.ch/referenzen/27/011.jpg",
+      "datei": "referenzen/27_011.jpg",
+      "http": 200,
+      "bytes": 197201,
+      "typ": "image/jpeg"
+    },
+    {
+      "quelle": "https://www.jfjost.ch/referenzen/27/012.jpg",
+      "datei": "referenzen/27_012.jpg",
+      "http": 200,
+      "bytes": 201226,
+      "typ": "image/jpeg"
+    },
+    {
+      "quelle": "https://www.jfjost.ch/referenzen/27/013.jpg",
+      "datei": "referenzen/27_013.jpg",
+      "http": 200,
+      "bytes": 196267,
+      "typ": "image/jpeg"
+    },
+    {
+      "quelle": "https://www.jfjost.ch/referenzen/30/039.jpg",
+      "datei": "referenzen/30_039.jpg",
+      "http": 200,
+      "bytes": 171902,
+      "typ": "image/jpeg"
+    },
+    {
+      "quelle": "https://www.jfjost.ch/referenzen/30/040.jpg",
+      "datei": "referenzen/30_040.jpg",
+      "http": 200,
+      "bytes": 151885,
+      "typ": "image/jpeg"
+    },
+    {
+      "quelle": "https://www.jfjost.ch/referenzen/30/041.jpg",
+      "datei": "referenzen/30_041.jpg",
+      "http": 200,
+      "bytes": 147680,
+      "typ": "image/jpeg"
+    },
+    {
+      "quelle": "https://www.jfjost.ch/referenzen/30/042.jpg",
+      "datei": "referenzen/30_042.jpg",
+      "http": 200,
+      "bytes": 197661,
+      "typ": "image/jpeg"
+    },
+    {
+      "quelle": "https://www.jfjost.ch/referenzen/30/044.jpg",
+      "datei": "referenzen/30_044.jpg",
+      "http": 200,
+      "bytes": 194329,
+      "typ": "image/jpeg"
+    },
+    {
+      "quelle": "https://www.jfjost.ch/referenzen/31/011.jpg",
+      "datei": "referenzen/31_011.jpg",
+      "http": 200,
+      "bytes": 169699,
+      "typ": "image/jpeg"
+    },
+    {
+      "quelle": "https://www.jfjost.ch/referenzen/31/013_2.jpg",
+      "datei": "referenzen/31_013_2.jpg",
+      "http": 200,
+      "bytes": 173451,
+      "typ": "image/jpeg"
+    },
+    {
+      "quelle": "https://www.jfjost.ch/referenzen/31/014.jpg",
+      "datei": "referenzen/31_014.jpg",
+      "http": 200,
+      "bytes": 198892,
+      "typ": "image/jpeg"
+    },
+    {
+      "quelle": "https://www.jfjost.ch/referenzen/31/014_2.jpg",
+      "datei": "referenzen/31_014_2.jpg",
+      "http": 200,
+      "bytes": 193304,
+      "typ": "image/jpeg"
+    },
+    {
+      "quelle": "https://www.jfjost.ch/referenzen/32/009-3.jpg",
+      "datei": "referenzen/32_009-3.jpg",
+      "http": 200,
+      "bytes": 150676,
+      "typ": "image/jpeg"
+    },
+    {
+      "quelle": "https://www.jfjost.ch/referenzen/32/009.jpg",
+      "datei": "referenzen/32_009.jpg",
+      "http": 200,
+      "bytes": 168638,
+      "typ": "image/jpeg"
+    },
+    {
+      "quelle": "https://www.jfjost.ch/referenzen/32/011-2.jpg",
+      "datei": "referenzen/32_011-2.jpg",
+      "http": 200,
+      "bytes": 146034,
+      "typ": "image/jpeg"
+    },
+    {
+      "quelle": "https://www.jfjost.ch/referenzen/32/021.jpg",
+      "datei": "referenzen/32_021.jpg",
+      "http": 200,
+      "bytes": 138552,
+      "typ": "image/jpeg"
+    },
+    {
+      "quelle": "https://www.jfjost.ch/referenzen/32/023-2.jpg",
+      "datei": "referenzen/32_023-2.jpg",
+      "http": 200,
+      "bytes": 156983,
+      "typ": "image/jpeg"
+    },
+    {
+      "quelle": "https://www.jfjost.ch/referenzen/32/024.jpg",
+      "datei": "referenzen/32_024.jpg",
+      "http": 200,
+      "bytes": 166531,
+      "typ": "image/jpeg"
+    },
+    {
+      "quelle": "https://www.jfjost.ch/referenzen/32/033.jpg",
+      "datei": "referenzen/32_033.jpg",
+      "http": 200,
+      "bytes": 154916,
+      "typ": "image/jpeg"
+    },
+    {
+      "quelle": "https://www.jfjost.ch/referenzen/32/044.jpg",
+      "datei": "referenzen/32_044.jpg",
+      "http": 200,
+      "bytes": 148024,
+      "typ": "image/jpeg"
+    },
+    {
+      "quelle": "https://www.jfjost.ch/referenzen/32/045.jpg",
+      "datei": "referenzen/32_045.jpg",
+      "http": 200,
+      "bytes": 124751,
+      "typ": "image/jpeg"
+    },
+    {
+      "quelle": "https://www.jfjost.ch/referenzen/32/046.jpg",
+      "datei": "referenzen/32_046.jpg",
+      "http": 200,
+      "bytes": 139767,
+      "typ": "image/jpeg"
+    },
+    {
+      "quelle": "https://www.jfjost.ch/referenzen/32/052.jpg",
+      "datei": "referenzen/32_052.jpg",
+      "http": 200,
+      "bytes": 167296,
+      "typ": "image/jpeg"
+    },
+    {
+      "quelle": "https://www.jfjost.ch/referenzen/33/004-2.JPG",
+      "datei": "referenzen/33_004-2.JPG",
+      "http": 200,
+      "bytes": 238298,
+      "typ": "image/jpeg"
+    },
+    {
+      "quelle": "https://www.jfjost.ch/referenzen/33/013.JPG",
+      "datei": "referenzen/33_013.JPG",
+      "http": 200,
+      "bytes": 374574,
+      "typ": "image/jpeg"
+    },
+    {
+      "quelle": "https://www.jfjost.ch/referenzen/33/023.JPG",
+      "datei": "referenzen/33_023.JPG",
+      "http": 200,
+      "bytes": 231456,
+      "typ": "image/jpeg"
+    },
+    {
+      "quelle": "https://www.jfjost.ch/referenzen/33/030-3.JPG",
+      "datei": "referenzen/33_030-3.JPG",
+      "http": 200,
+      "bytes": 236723,
+      "typ": "image/jpeg"
+    },
+    {
+      "quelle": "https://www.jfjost.ch/referenzen/34/002.jpg",
+      "datei": "referenzen/34_002.jpg",
+      "http": 200,
+      "bytes": 240809,
+      "typ": "image/jpeg"
+    },
+    {
+      "quelle": "https://www.jfjost.ch/referenzen/34/003-2.jpg",
+      "datei": "referenzen/34_003-2.jpg",
+      "http": 200,
+      "bytes": 230806,
+      "typ": "image/jpeg"
+    },
+    {
+      "quelle": "https://www.jfjost.ch/referenzen/34/005-2.jpg",
+      "datei": "referenzen/34_005-2.jpg",
+      "http": 200,
+      "bytes": 183839,
+      "typ": "image/jpeg"
+    },
+    {
+      "quelle": "https://www.jfjost.ch/referenzen/34/006.jpg",
+      "datei": "referenzen/34_006.jpg",
+      "http": 200,
+      "bytes": 173789,
+      "typ": "image/jpeg"
+    },
+    {
+      "quelle": "https://www.jfjost.ch/referenzen/34/007.jpg",
+      "datei": "referenzen/34_007.jpg",
+      "http": 200,
+      "bytes": 194019,
+      "typ": "image/jpeg"
+    },
+    {
+      "quelle": "https://www.jfjost.ch/referenzen/34/008.jpg",
+      "datei": "referenzen/34_008.jpg",
+      "http": 200,
+      "bytes": 223470,
+      "typ": "image/jpeg"
+    },
+    {
+      "quelle": "https://www.jfjost.ch/referenzen/34/027.jpg",
+      "datei": "referenzen/34_027.jpg",
+      "http": 200,
+      "bytes": 208691,
+      "typ": "image/jpeg"
+    },
+    {
+      "quelle": "https://www.jfjost.ch/referenzen/34/029.jpg",
+      "datei": "referenzen/34_029.jpg",
+      "http": 200,
+      "bytes": 166993,
+      "typ": "image/jpeg"
+    },
+    {
+      "quelle": "https://www.jfjost.ch/referenzen/34/052.jpg",
+      "datei": "referenzen/34_052.jpg",
+      "http": 200,
+      "bytes": 162343,
+      "typ": "image/jpeg"
+    },
+    {
+      "quelle": "https://www.jfjost.ch/referenzen/34/055.jpg",
+      "datei": "referenzen/34_055.jpg",
+      "http": 200,
+      "bytes": 191907,
+      "typ": "image/jpeg"
+    },
+    {
+      "quelle": "https://www.jfjost.ch/referenzen/36/bauernhof-0.jpg",
+      "datei": "referenzen/36_bauernhof-0.jpg",
+      "http": 200,
+      "bytes": 78102,
+      "typ": "image/jpeg"
+    },
+    {
+      "quelle": "https://www.jfjost.ch/referenzen/36/bauernhof-1.jpg",
+      "datei": "referenzen/36_bauernhof-1.jpg",
+      "http": 200,
+      "bytes": 80948,
+      "typ": "image/jpeg"
+    },
+    {
+      "quelle": "https://www.jfjost.ch/referenzen/36/bauernhof-10.jpg",
+      "datei": "referenzen/36_bauernhof-10.jpg",
+      "http": 200,
+      "bytes": 64854,
+      "typ": "image/jpeg"
+    },
+    {
+      "quelle": "https://www.jfjost.ch/referenzen/36/bauernhof-11.jpg",
+      "datei": "referenzen/36_bauernhof-11.jpg",
+      "http": 200,
+      "bytes": 77697,
+      "typ": "image/jpeg"
+    },
+    {
+      "quelle": "https://www.jfjost.ch/referenzen/36/bauernhof-12.jpg",
+      "datei": "referenzen/36_bauernhof-12.jpg",
+      "http": 200,
+      "bytes": 68655,
+      "typ": "image/jpeg"
+    },
+    {
+      "quelle": "https://www.jfjost.ch/referenzen/36/bauernhof-13.jpg",
+      "datei": "referenzen/36_bauernhof-13.jpg",
+      "http": 200,
+      "bytes": 83210,
+      "typ": "image/jpeg"
+    },
+    {
+      "quelle": "https://www.jfjost.ch/referenzen/36/bauernhof-14.jpg",
+      "datei": "referenzen/36_bauernhof-14.jpg",
+      "http": 200,
+      "bytes": 76185,
+      "typ": "image/jpeg"
+    },
+    {
+      "quelle": "https://www.jfjost.ch/referenzen/36/bauernhof-2.jpg",
+      "datei": "referenzen/36_bauernhof-2.jpg",
+      "http": 200,
+      "bytes": 81380,
+      "typ": "image/jpeg"
+    },
+    {
+      "quelle": "https://www.jfjost.ch/referenzen/36/bauernhof-3.jpg",
+      "datei": "referenzen/36_bauernhof-3.jpg",
+      "http": 200,
+      "bytes": 75206,
+      "typ": "image/jpeg"
+    },
+    {
+      "quelle": "https://www.jfjost.ch/referenzen/36/bauernhof-4.jpg",
+      "datei": "referenzen/36_bauernhof-4.jpg",
+      "http": 200,
+      "bytes": 71777,
+      "typ": "image/jpeg"
+    },
+    {
+      "quelle": "https://www.jfjost.ch/referenzen/36/bauernhof-5.jpg",
+      "datei": "referenzen/36_bauernhof-5.jpg",
+      "http": 200,
+      "bytes": 76412,
+      "typ": "image/jpeg"
+    },
+    {
+      "quelle": "https://www.jfjost.ch/referenzen/36/bauernhof-6.jpg",
+      "datei": "referenzen/36_bauernhof-6.jpg",
+      "http": 200,
+      "bytes": 66325,
+      "typ": "image/jpeg"
+    },
+    {
+      "quelle": "https://www.jfjost.ch/referenzen/36/bauernhof-7.jpg",
+      "datei": "referenzen/36_bauernhof-7.jpg",
+      "http": 200,
+      "bytes": 63137,
+      "typ": "image/jpeg"
+    },
+    {
+      "quelle": "https://www.jfjost.ch/referenzen/36/bauernhof-8.jpg",
+      "datei": "referenzen/36_bauernhof-8.jpg",
+      "http": 200,
+      "bytes": 76233,
+      "typ": "image/jpeg"
+    },
+    {
+      "quelle": "https://www.jfjost.ch/referenzen/36/bauernhof-9.jpg",
+      "datei": "referenzen/36_bauernhof-9.jpg",
+      "http": 200,
+      "bytes": 72282,
+      "typ": "image/jpeg"
+    },
+    {
+      "quelle": "https://www.jfjost.ch/uploads/files/Ukrainespende Lilie.[1].jpg",
+      "datei": "engagement/ukrainespende-lilie.jpg",
+      "http": 200,
+      "bytes": 560735,
+      "typ": "image/jpeg"
+    },
+    {
+      "quelle": "https://www.jfjost.ch/uploads/files/dokumente/Anmeldeformular Wohnung.pdf",
+      "datei": "dokumente/Anmeldeformular Wohnung.pdf",
+      "http": 200,
+      "bytes": 22369,
+      "typ": "application/pdf"
+    },
+    {
+      "quelle": "https://www.jfjost.ch/uploads/files/dokumente/Anmeldeformular Gewerbe.pdf",
+      "datei": "dokumente/Anmeldeformular Gewerbe.pdf",
+      "http": 200,
+      "bytes": 20998,
+      "typ": "application/pdf"
+    },
+    {
+      "quelle": "https://www.jfjost.ch/uploads/files/dokumente/Merkblatt Energiesparen.pdf",
+      "datei": "dokumente/Merkblatt Energiesparen.pdf",
+      "http": 200,
+      "bytes": 35974,
+      "typ": "application/pdf"
+    },
+    {
+      "quelle": "https://www.jfjost.ch/uploads/files/dokumente/Steigende Energiepreise_Garaio.pdf",
+      "datei": "dokumente/Steigende Energiepreise_Garaio.pdf",
+      "http": 200,
+      "bytes": 111704,
+      "typ": "application/pdf"
+    },
+    {
+      "quelle": "https://www.jfjost.ch/uploads/files/dokumente/Merkblatt Grillieren.pdf",
+      "datei": "dokumente/Merkblatt Grillieren.pdf",
+      "http": 200,
+      "bytes": 125373,
+      "typ": "application/pdf"
+    },
+    {
+      "quelle": "https://www.jfjost.ch/uploads/files/dokumente/Merkblatt Tierhaltung.pdf",
+      "datei": "dokumente/Merkblatt Tierhaltung.pdf",
+      "http": 200,
+      "bytes": 34619,
+      "typ": "application/pdf"
+    },
+    {
+      "quelle": "https://www.jfjost.ch/uploads/files/dokumente/Merkblatt_Wohnungsrueckgabe.pdf",
+      "datei": "dokumente/Merkblatt_Wohnungsrueckgabe.pdf",
+      "http": 200,
+      "bytes": 55663,
+      "typ": "application/pdf"
+    },
+    {
+      "quelle": "https://www.jfjost.ch/_img/logo.svg",
+      "datei": "logo/logo.svg",
+      "http": 200,
+      "bytes": 1334,
+      "typ": "image/svg+xml"
+    },
+    {
+      "quelle": "https://www.jfjost.ch/images/favicon.ico",
+      "datei": "logo/favicon.ico",
+      "http": 404,
+      "bytes": 236,
+      "typ": "text/html; charset=iso-8859-1"
+    }
+  ]
+}

@@ -1,0 +1,113 @@
+.fuss {
+  margin-top: auto;
+  background: var(--nacht);
+  color: var(--nacht-text);
+  border-top: 8px solid var(--gelb);
+  padding-block: var(--raum-8) var(--raum-6);
+}
+.fuss a {
+  text-decoration: none;
+  min-height: 2.75rem;
+  display: inline-flex;
+  align-items: center;
+}
+.fuss a:hover {
+  text-decoration: underline;
+  text-decoration-color: var(--gelb);
+  text-decoration-thickness: 2px;
+}
+.raster {
+  display: grid;
+  gap: var(--raum-6) var(--raum-5);
+  grid-template-columns: 1fr;
+}
+@media (min-width: 40rem) {
+  .raster {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (min-width: 64rem) {
+  .raster {
+    grid-template-columns: 1.4fr 1.2fr repeat(3, 1fr);
+  }
+}
+.adresse p,
+.adresse address {
+  font-style: normal;
+  margin: 0;
+}
+.firma {
+  margin-top: var(--raum-4) !important;
+  font-family: var(--schrift-display);
+  font-size: 1.5rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+}
+.anschrift {
+  color: var(--nacht-text-2);
+  margin-bottom: var(--raum-3) !important;
+}
+.titel {
+  font-family: var(--schrift-display);
+  font-size: 1.05rem;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--nacht-text-2);
+  margin-bottom: var(--raum-3);
+  line-height: 1.2;
+}
+.zeiten {
+  margin: 0;
+  display: grid;
+  gap: var(--raum-2);
+}
+.zeiten dt {
+  font-weight: 600;
+}
+.zeiten dd {
+  margin: 0;
+  color: var(--nacht-text-2);
+}
+.route {
+  margin-top: var(--raum-3);
+  border-bottom: var(--strich-stark) solid var(--gelb);
+}
+.links {
+  display: flex;
+  flex-direction: column;
+  gap: var(--raum-1);
+}
+.links a,
+.rechtslinks a {
+  min-width: 2.75rem;
+}
+.mitglied {
+  margin-top: var(--raum-7);
+  padding-top: var(--raum-5);
+  border-top: var(--strich) solid var(--nacht-2);
+  color: var(--nacht-text-2);
+  font-size: var(--groesse-klein);
+}
+.mitglied .titel {
+  margin-bottom: var(--raum-2);
+}
+.unten {
+  margin-top: var(--raum-6);
+  padding-top: var(--raum-5);
+  border-top: var(--strich) solid var(--nacht-2);
+  display: flex;
+  flex-direction: column;
+  gap: var(--raum-3);
+}
+.rechtslinks {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--raum-2) var(--raum-5);
+  font-weight: 600;
+}
+.demo {
+  font-size: var(--groesse-mini);
+  color: var(--nacht-text-2);
+  max-width: 60rem;
+}

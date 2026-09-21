@@ -1,0 +1,19 @@
+.seite {
+  min-height: 60vh;
+  background: var(--beton);
+}
+.titel {
+  margin-top: var(--raum-2);
+}
+.text {
+  margin-top: var(--raum-4);
+  max-width: var(--breite-lesen);
+  color: var(--tinte-2);
+}
+.liste {
+  margin-top: var(--raum-5);
+  display: flex;
+  flex-direction: column;
+  gap: var(--raum-2);
+  align-items: flex-start;
+}

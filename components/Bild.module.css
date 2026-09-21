@@ -1,0 +1,16 @@
+.rahmen {
+  display: block;
+  position: relative;
+  overflow: hidden;
+  background-color: var(--beton-2);
+  background-size: cover;
+  background-position: center;
+}
+.rahmen picture,
+.rahmen img {
+  width: 100%;
+  height: 100%;
+}
+.rahmen img {
+  object-fit: cover;
+}

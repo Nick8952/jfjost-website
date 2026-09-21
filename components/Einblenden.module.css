@@ -1,0 +1,24 @@
+.einblenden {
+  opacity: 0;
+  transform: translateY(12px);
+  transition:
+    opacity var(--dauer-lang) var(--kurve),
+    transform var(--dauer-lang) var(--kurve);
+}
+.sichtbar {
+  opacity: 1;
+  transform: none;
+}
+@media (prefers-reduced-motion: reduce) {
+  .einblenden {
+    opacity: 1;
+    transform: none;
+  }
+}
+/* Ohne JavaScript bleibt alles sichtbar. */
+@media (scripting: none) {
+  .einblenden {
+    opacity: 1;
+    transform: none;
+  }
+}

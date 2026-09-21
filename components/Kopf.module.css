@@ -1,0 +1,54 @@
+.kopf {
+  position: sticky;
+  top: 0;
+  z-index: var(--ebene-kopf);
+  background: var(--papier);
+  border-bottom: var(--strich) solid var(--linie);
+}
+.zeile {
+  display: flex;
+  align-items: center;
+  gap: var(--raum-5);
+  min-height: var(--kopf-hoehe);
+}
+.marke {
+  display: flex;
+  align-items: center;
+  gap: var(--raum-3);
+  text-decoration: none;
+  min-height: 2.75rem;
+}
+.logo {
+  flex: none;
+}
+.wortmarke {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.05;
+}
+.name {
+  font-family: var(--schrift-display);
+  font-size: 1.5rem;
+  font-weight: 700;
+  letter-spacing: 0.01em;
+  white-space: nowrap;
+}
+.zusatz {
+  font-size: var(--groesse-mini);
+  color: var(--tinte-3);
+  letter-spacing: 0.02em;
+}
+.kopf .telefon {
+  margin-left: auto;
+  display: none;
+}
+@media (min-width: 64rem) {
+  .kopf .telefon {
+    display: inline-flex;
+  }
+}
+@media (max-width: 30rem) {
+  .zusatz {
+    display: none;
+  }
+}

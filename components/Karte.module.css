@@ -1,0 +1,60 @@
+.karte {
+  border: var(--strich-stark) solid var(--tinte);
+}
+.iframe {
+  display: block;
+  width: 100%;
+  height: 24rem;
+  border: 0;
+}
+.unterzeile {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--raum-3);
+  padding: var(--raum-3);
+  border-top: var(--strich) solid var(--linie);
+  background: var(--beton);
+}
+.zurueck {
+  min-height: 2.75rem;
+  padding: 0.5rem 0;
+  border: 0;
+  background: none;
+  cursor: pointer;
+  text-decoration: underline;
+  font-weight: 500;
+}
+.platzhalter {
+  border: var(--strich-stark) dashed var(--linie-stark);
+  background: var(--beton);
+  background-image: repeating-linear-gradient(135deg, transparent 0 22px, rgb(0 0 0 / 0.03) 22px 24px);
+  padding: var(--raum-5);
+  min-height: 20rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: var(--raum-3);
+}
+.symbol {
+  width: 2.5rem;
+  height: 2.5rem;
+  color: var(--tinte);
+}
+.adresse {
+  font-family: var(--schrift-display);
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+.hinweis {
+  color: var(--tinte-2);
+  max-width: 40rem;
+  font-size: var(--groesse-klein);
+}
+.aktionen {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--raum-3);
+  margin-top: var(--raum-2);
+}

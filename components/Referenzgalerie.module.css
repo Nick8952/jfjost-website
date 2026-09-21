@@ -1,0 +1,59 @@
+.galerie {
+  position: relative;
+  min-width: 0;
+  max-width: 100%;
+}
+.streifen {
+  display: flex;
+  gap: var(--raum-4);
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-padding-inline: var(--rand);
+  padding-inline: var(--rand);
+  padding-bottom: var(--raum-2);
+  margin-inline: calc(-1 * var(--rand));
+  scrollbar-width: thin;
+  scrollbar-color: var(--linie-stark) transparent;
+}
+.foto {
+  flex: 0 0 min(85vw, 30rem);
+  scroll-snap-align: start;
+}
+.foto > figure > span {
+  border: var(--strich) solid var(--linie);
+}
+.legende {
+  display: flex;
+  gap: var(--raum-3);
+  margin-top: var(--raum-2);
+  font-size: var(--groesse-klein);
+  color: var(--tinte-2);
+  min-height: 1.5em;
+}
+.nummer {
+  font-family: var(--schrift-display);
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  color: var(--tinte);
+}
+.knoepfe {
+  display: flex;
+  gap: var(--raum-2);
+  margin-top: var(--raum-3);
+}
+.knopf {
+  width: 2.75rem;
+  height: 2.75rem;
+  display: grid;
+  place-items: center;
+  border: var(--strich-stark) solid var(--tinte);
+  background: var(--papier);
+  cursor: pointer;
+}
+.knopf:hover {
+  background: var(--gelb);
+}
+.knopf svg {
+  width: 1.25rem;
+  height: 1.25rem;
+}

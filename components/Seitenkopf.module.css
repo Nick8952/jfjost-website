@@ -1,0 +1,39 @@
+.kopf {
+  background: var(--beton);
+  padding-block: var(--raum-7) var(--raum-7);
+  border-bottom: var(--strich) solid var(--linie);
+}
+.innen {
+  display: grid;
+  gap: var(--raum-6);
+  align-items: end;
+}
+.mitBild .innen {
+  grid-template-columns: 1fr;
+}
+@media (min-width: 64rem) {
+  .kopf {
+    padding-block: var(--raum-8) var(--raum-8);
+  }
+  .mitBild .innen {
+    grid-template-columns: 1.2fr 1fr;
+  }
+}
+.text {
+  max-width: 52rem;
+}
+.titel {
+  margin-top: var(--raum-2);
+}
+.einleitung {
+  margin-top: var(--raum-5);
+  max-width: var(--breite-lesen);
+  font-size: 1.1875rem;
+  color: var(--tinte-2);
+}
+.bild {
+  border: var(--strich-stark) solid var(--tinte);
+  box-shadow: 12px 12px 0 var(--gelb);
+  margin-right: 12px;
+  margin-bottom: 12px;
+}

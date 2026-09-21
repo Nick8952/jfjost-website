@@ -1,0 +1,134 @@
+/* Gemeinsame Stile der Inhaltsseiten (Team, Referenzen, Kontakt, Rechtstexte). */
+.inhalt {
+  padding-block: var(--abschnitt);
+}
+.rechtstext {
+  max-width: var(--breite-lesen);
+}
+.stand {
+  margin-top: var(--raum-6);
+  font-size: var(--groesse-klein);
+  color: var(--tinte-3);
+}
+.hinweis {
+  margin-top: var(--raum-5);
+  font-size: var(--groesse-klein);
+  color: var(--tinte-3);
+}
+.projekte {
+  display: flex;
+  flex-direction: column;
+  gap: var(--raum-8);
+}
+.projekt {
+  min-width: 0;
+  max-width: 100%;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: var(--raum-4);
+  padding-top: var(--raum-6);
+  border-top: var(--strich-stark) solid var(--tinte);
+}
+.projektKopf {
+  display: grid;
+  gap: var(--raum-3);
+}
+@media (min-width: 64rem) {
+  .projektKopf {
+    grid-template-columns: 1fr 1fr;
+    align-items: start;
+  }
+}
+.projektMeta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--raum-2) var(--raum-4);
+  font-family: var(--schrift-display);
+  font-size: 1.125rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--tinte-2);
+}
+.projektMeta span::before {
+  content: "";
+  display: inline-block;
+  width: 0.6rem;
+  height: 0.6rem;
+  background: var(--gelb);
+  margin-right: 0.5rem;
+  vertical-align: 0.05em;
+}
+.projektTitel {
+  font-size: var(--groesse-h2);
+  margin-top: var(--raum-2);
+}
+.projektLeistungen {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--raum-2);
+}
+.projektLeistungen li {
+  padding: 0.35rem 0.7rem;
+  border: var(--strich) solid var(--linie-stark);
+  font-size: var(--groesse-klein);
+}
+.projektText {
+  color: var(--tinte-2);
+  max-width: var(--breite-lesen);
+}
+.kontakt {
+  display: grid;
+  gap: var(--raum-7);
+}
+@media (min-width: 64rem) {
+  .kontakt {
+    grid-template-columns: 1.2fr 1fr;
+    gap: var(--raum-8);
+  }
+}
+.kontaktSpalte {
+  display: flex;
+  flex-direction: column;
+  gap: var(--raum-5);
+}
+.kontaktBlock {
+  padding: var(--raum-5);
+  background: var(--beton);
+  border-left: 6px solid var(--gelb);
+}
+.kontaktBlock h2 {
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: var(--raum-3);
+}
+.kontaktBlock address {
+  font-style: normal;
+}
+.kontaktBlock a {
+  font-weight: 600;
+  min-height: 2.75rem;
+  display: inline-flex;
+  align-items: center;
+  text-decoration: none;
+  border-bottom: var(--strich-stark) solid var(--gelb);
+}
+.kontaktBlock a:hover {
+  background: var(--gelb);
+}
+.zeiten {
+  margin: 0;
+  display: grid;
+  gap: var(--raum-2);
+}
+.zeiten dt {
+  font-weight: 600;
+}
+.zeiten dd {
+  margin: 0;
+  color: var(--tinte-2);
+}
+.formularTitel {
+  margin-bottom: var(--raum-4);
+}

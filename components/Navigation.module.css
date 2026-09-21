@@ -1,0 +1,210 @@
+.nav {
+  margin-left: auto;
+}
+.menueKnopf {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--raum-2);
+  min-height: 2.75rem;
+  min-width: 2.75rem;
+  padding: 0.5rem 0.75rem;
+  border: var(--strich-stark) solid var(--tinte);
+  background: var(--papier);
+  font-family: var(--schrift-display);
+  font-size: 1.05rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  cursor: pointer;
+  position: relative;
+  z-index: calc(var(--ebene-menue) + 1);
+}
+.menueKnopf svg {
+  width: 1.25rem;
+  height: 1.25rem;
+}
+
+/* --------------------------------------------------------- Mobil (Panel) */
+.panel {
+  position: fixed;
+  inset: 0;
+  z-index: var(--ebene-menue);
+  display: none;
+  flex-direction: column;
+  padding: calc(var(--kopf-hoehe) + var(--raum-4)) var(--rand) var(--raum-6);
+  background: var(--nacht);
+  color: var(--nacht-text);
+  overflow-y: auto;
+}
+.panelOffen {
+  display: flex;
+}
+.liste {
+  display: flex;
+  flex-direction: column;
+  gap: var(--raum-4);
+}
+.gruppe {
+  border-top: var(--strich) solid var(--nacht-2);
+  padding-top: var(--raum-3);
+}
+.gruppenKnopf {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  min-height: 2.75rem;
+  padding: 0.5rem 0;
+  border: 0;
+  background: none;
+  font-family: var(--schrift-display);
+  font-size: 1.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  color: inherit;
+  cursor: pointer;
+  text-align: left;
+}
+.caret {
+  width: 1.1rem;
+  height: 1.1rem;
+  transition: transform var(--dauer-kurz) var(--kurve);
+}
+.gruppenKnopf[aria-expanded="true"] .caret {
+  transform: rotate(180deg);
+}
+.unterliste {
+  display: none;
+  flex-direction: column;
+  padding-left: var(--raum-4);
+  border-left: var(--strich-stark) solid var(--gelb);
+  margin: var(--raum-2) 0 var(--raum-3);
+}
+.unterlisteOffen {
+  display: flex;
+}
+.unterpunkt {
+  display: flex;
+  flex-direction: column;
+  min-height: 2.75rem;
+  padding: 0.5rem 0;
+  text-decoration: none;
+}
+.unterpunktText {
+  font-weight: 600;
+}
+.unterpunktHinweis {
+  font-size: var(--groesse-klein);
+  color: var(--nacht-text-2);
+}
+.punkt {
+  display: flex;
+  align-items: center;
+  min-height: 2.75rem;
+  padding: 0.5rem 0;
+  border-top: var(--strich) solid var(--nacht-2);
+  font-family: var(--schrift-display);
+  font-size: 1.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+}
+.aktiv {
+  box-shadow: inset 4px 0 0 var(--gelb);
+  padding-left: var(--raum-3);
+}
+.panelFuss {
+  margin-top: auto;
+  padding-top: var(--raum-6);
+  display: flex;
+  flex-direction: column;
+  gap: var(--raum-3);
+  align-items: flex-start;
+}
+.panelAdresse {
+  color: var(--nacht-text-2);
+  font-size: var(--groesse-klein);
+}
+
+/* ------------------------------------------------------------ Desktop */
+@media (min-width: 64rem) {
+  .menueKnopf {
+    display: none;
+  }
+  .panel {
+    position: static;
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+    background: none;
+    color: inherit;
+    overflow: visible;
+  }
+  .panelFuss {
+    display: none;
+  }
+  .liste {
+    flex-direction: row;
+    align-items: center;
+    gap: var(--raum-2);
+  }
+  .gruppe {
+    position: relative;
+    border: 0;
+    padding: 0;
+  }
+  .gruppenKnopf,
+  .punkt {
+    min-height: 2.75rem;
+    padding: 0.5rem 0.75rem;
+    border: 0;
+    font-size: 1.125rem;
+    letter-spacing: 0.06em;
+    gap: var(--raum-1);
+    width: auto;
+  }
+  .gruppenKnopf:hover,
+  .punkt:hover {
+    background: var(--beton);
+  }
+  .aktiv {
+    box-shadow: inset 0 -3px 0 var(--gelb);
+    padding-left: 0.75rem;
+  }
+  .unterliste {
+    position: absolute;
+    top: calc(100% + 0.5rem);
+    left: 0;
+    min-width: 19rem;
+    margin: 0;
+    padding: var(--raum-2);
+    border: var(--strich-stark) solid var(--tinte);
+    border-left-width: var(--strich-stark);
+    background: var(--papier);
+    color: var(--tinte);
+    box-shadow: 0 16px 40px -20px rgb(0 0 0 / 0.35);
+  }
+  .unterliste::before {
+    content: "";
+    position: absolute;
+    top: -0.5rem;
+    left: 1rem;
+    width: 0.75rem;
+    height: 0.75rem;
+    background: var(--gelb);
+  }
+  .unterpunkt {
+    padding: 0.5rem 0.75rem;
+  }
+  .unterpunkt:hover {
+    background: var(--beton);
+  }
+  .unterpunkt.aktiv {
+    box-shadow: inset 4px 0 0 var(--gelb);
+  }
+  .unterpunktHinweis {
+    color: var(--tinte-3);
+  }
+}

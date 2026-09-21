@@ -1,0 +1,110 @@
+.formular {
+  display: flex;
+  flex-direction: column;
+  gap: var(--raum-4);
+}
+.anliegen {
+  border: 0;
+  padding: 0;
+  margin: 0;
+}
+.anliegen legend {
+  font-weight: 600;
+  margin-bottom: var(--raum-2);
+}
+.chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--raum-2);
+}
+.chip {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--raum-2);
+  min-height: 2.75rem;
+  padding: 0.5rem 0.9rem;
+  border: var(--strich-stark) solid var(--tinte);
+  background: var(--papier);
+  cursor: pointer;
+  font-family: var(--schrift-display);
+  font-size: 1.05rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  user-select: none;
+}
+.chipQuadrat {
+  width: 1rem;
+  height: 1rem;
+  border: var(--strich-stark) solid var(--tinte);
+  background: var(--papier);
+}
+.chipAktiv {
+  background: var(--gelb);
+}
+.chipAktiv .chipQuadrat {
+  background: var(--tinte);
+}
+.chip:has(input:focus-visible) {
+  outline: 3px solid var(--fokus);
+  outline-offset: 3px;
+}
+.zeile {
+  display: grid;
+  gap: var(--raum-4);
+}
+@media (min-width: 40rem) {
+  .zeile {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+.feld {
+  display: flex;
+  flex-direction: column;
+  gap: var(--raum-1);
+}
+.feld label {
+  font-weight: 600;
+}
+.feld input,
+.feld textarea {
+  font: inherit;
+  min-height: 3rem;
+  padding: 0.65rem 0.85rem;
+  border: var(--strich-stark) solid var(--tinte);
+  background: var(--papier);
+  color: var(--tinte);
+  border-radius: 0;
+}
+.feld textarea {
+  resize: vertical;
+}
+.feld input[aria-invalid="true"],
+.feld textarea[aria-invalid="true"] {
+  border-color: var(--fehler);
+}
+.fehler {
+  color: var(--fehler);
+  font-size: var(--groesse-klein);
+  font-weight: 500;
+}
+.hinweis {
+  font-size: var(--groesse-klein);
+  color: var(--tinte-2);
+  padding: var(--raum-3);
+  background: var(--beton);
+  border-left: 4px solid var(--gelb);
+}
+.pflicht {
+  font-size: var(--groesse-mini);
+  color: var(--tinte-3);
+}
+.aktionen {
+  display: flex;
+  gap: var(--raum-3);
+}
+.status {
+  padding: var(--raum-3);
+  border: var(--strich-stark) solid var(--tinte);
+  background: var(--papier);
+}

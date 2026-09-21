@@ -1,0 +1,267 @@
+.abschnittTitel {
+  margin-bottom: var(--raum-6);
+  max-width: 40ch;
+}
+
+/* Textblock */
+.textblock {
+  display: grid;
+  gap: var(--raum-4);
+}
+.textblockKopf {
+  max-width: 40ch;
+}
+.textblockText {
+  max-width: var(--breite-lesen);
+}
+@media (min-width: 64rem) {
+  .textblockBreit {
+    grid-template-columns: 1fr 1.6fr;
+    gap: var(--raum-8);
+    align-items: start;
+  }
+  .textblockBreit .textblockText {
+    max-width: none;
+    columns: 2;
+    column-gap: var(--raum-6);
+  }
+  .textblockBreit .textblockText > * {
+    break-inside: avoid;
+  }
+}
+
+/* Leistungen als nummerierte Positionen (wie ein Leistungsverzeichnis) */
+.leistungen {
+  border-top: var(--strich-stark) solid var(--tinte);
+}
+.leistung {
+  display: grid;
+  grid-template-columns: 3.5rem 1fr;
+  gap: var(--raum-4);
+  padding: var(--raum-5) 0;
+  border-bottom: var(--strich) solid var(--linie);
+}
+@media (min-width: 48rem) {
+  .leistung {
+    grid-template-columns: 6rem 1fr;
+    gap: var(--raum-6);
+  }
+}
+.leistungNummer {
+  font-family: var(--schrift-display);
+  font-size: 2.25rem;
+  font-weight: 700;
+  line-height: 1;
+  color: var(--tinte);
+  background: var(--gelb);
+  display: inline-grid;
+  place-items: center;
+  width: 3.25rem;
+  height: 3.25rem;
+}
+.leistungTitel {
+  margin-bottom: var(--raum-2);
+}
+.leistungText {
+  max-width: var(--breite-lesen);
+  color: var(--tinte-2);
+}
+
+/* Teaser */
+.teaser {
+  display: grid;
+  gap: var(--raum-4);
+  grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+}
+.teaserKarte {
+  display: flex;
+  flex-direction: column;
+  gap: var(--raum-3);
+  padding: var(--raum-5);
+  background: var(--papier);
+  border: var(--strich-stark) solid var(--tinte);
+  transition: box-shadow var(--dauer-kurz) var(--kurve), transform var(--dauer-kurz) var(--kurve);
+}
+.teaserKarte:hover {
+  box-shadow: 8px 8px 0 var(--gelb);
+  transform: translate(-2px, -2px);
+}
+.teaserTitel {
+  font-size: 1.75rem;
+}
+.teaserText {
+  color: var(--tinte-2);
+  flex: 1;
+}
+.teaserLink {
+  align-self: flex-start;
+}
+
+/* Bild + Text */
+.bildtext {
+  display: grid;
+  gap: var(--raum-6);
+  align-items: center;
+}
+@media (min-width: 64rem) {
+  .bildtext {
+    grid-template-columns: 1fr 1fr;
+    gap: var(--raum-8);
+  }
+  .bildRechts .bildtextBild {
+    order: 2;
+  }
+}
+.bildtextBild {
+  border: var(--strich-stark) solid var(--tinte);
+  box-shadow: 12px 12px 0 var(--gelb);
+  margin-right: 12px;
+  margin-bottom: 12px;
+}
+.bildtextText h2 {
+  margin-bottom: var(--raum-4);
+}
+.bildtextFliess {
+  color: var(--tinte-2);
+}
+
+/* Hinweis */
+.hinweisAbschnitt {
+  padding-block: var(--raum-4) var(--raum-6);
+}
+.hinweis {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: var(--raum-4);
+  padding: var(--raum-5);
+  border: var(--strich-stark) solid var(--tinte);
+  background: var(--papier);
+  max-width: 56rem;
+}
+.hinweisWichtig {
+  background: var(--gelb);
+}
+.hinweisSymbol {
+  width: 1.75rem;
+  height: 1.75rem;
+  margin-top: 0.15rem;
+}
+.hinweisTitel {
+  font-size: 1.5rem;
+  margin-bottom: var(--raum-2);
+}
+
+/* Zeitstrahl */
+.zeitstrahl {
+  display: flex;
+  flex-direction: column;
+  border-left: var(--strich-stark) solid var(--tinte);
+  margin-left: 0.5rem;
+}
+.zeitpunkt {
+  position: relative;
+  display: grid;
+  gap: var(--raum-2);
+  padding: 0 0 var(--raum-6) var(--raum-5);
+}
+.zeitpunkt::before {
+  content: "";
+  position: absolute;
+  left: calc(-0.5rem - 1px);
+  top: 0.55rem;
+  width: 1rem;
+  height: 1rem;
+  background: var(--gelb);
+  border: var(--strich-stark) solid var(--tinte);
+}
+@media (min-width: 48rem) {
+  .zeitpunkt {
+    grid-template-columns: 8rem 1fr;
+    gap: var(--raum-5);
+  }
+}
+.jahr {
+  font-family: var(--schrift-display);
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 1;
+}
+.zeitpunktTitel {
+  font-size: 1.5rem;
+  margin-bottom: var(--raum-2);
+}
+.zeitpunktText p {
+  color: var(--tinte-2);
+  max-width: var(--breite-lesen);
+}
+
+/* Linkliste */
+.linkliste {
+  border-top: var(--strich-stark) solid var(--tinte);
+  max-width: 48rem;
+}
+.link {
+  display: flex;
+  flex-direction: column;
+  gap: var(--raum-1);
+  padding: var(--raum-4) 0;
+  border-bottom: var(--strich) solid var(--linie);
+}
+.linkText {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--raum-2);
+  min-height: 2.75rem;
+  font-family: var(--schrift-display);
+  font-size: 1.375rem;
+  font-weight: 700;
+  text-decoration: none;
+  align-self: flex-start;
+  border-bottom: var(--strich-stark) solid var(--gelb);
+}
+.linkText:hover {
+  background: var(--gelb);
+}
+.linkText svg {
+  width: 1.1rem;
+  height: 1.1rem;
+}
+.linkUrl {
+  font-size: var(--groesse-klein);
+  color: var(--tinte-3);
+}
+.linkHinweis {
+  font-size: var(--groesse-mini);
+  color: var(--fehler);
+  font-weight: 500;
+}
+
+/* Handlungsaufforderung */
+.ctaInnen {
+  display: grid;
+  gap: var(--raum-5);
+  align-items: center;
+}
+@media (min-width: 64rem) {
+  .ctaInnen {
+    grid-template-columns: 1.4fr 1fr;
+  }
+}
+.ctaTitel {
+  max-width: 24ch;
+}
+.ctaText {
+  margin-top: var(--raum-3);
+  color: var(--nacht-text-2);
+  max-width: 50ch;
+}
+.ctaAktionen {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--raum-3);
+}
+@media (min-width: 64rem) {
+  .ctaAktionen {
+    justify-content: flex-end;
+  }
+}

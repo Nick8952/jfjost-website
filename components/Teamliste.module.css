@@ -1,0 +1,92 @@
+.liste {
+  display: flex;
+  flex-direction: column;
+  gap: var(--raum-8);
+}
+.abteilungTitel {
+  display: flex;
+  align-items: center;
+  gap: var(--raum-3);
+  font-size: var(--groesse-h3);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  padding-bottom: var(--raum-3);
+  border-bottom: var(--strich-stark) solid var(--tinte);
+  margin-bottom: var(--raum-5);
+}
+.marke {
+  width: 0.9rem;
+  height: 0.9rem;
+  background: var(--gelb);
+}
+.personen {
+  display: grid;
+  gap: var(--raum-6) var(--raum-5);
+  grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
+}
+.person {
+  display: flex;
+  flex-direction: column;
+  gap: var(--raum-3);
+}
+.foto {
+  aspect-ratio: 4 / 5;
+  max-width: 16rem;
+  background: var(--beton);
+  border: var(--strich) solid var(--linie);
+}
+/* Gruppenfoto im Querformat: eigene Zeile, natürliches Verhältnis, nichts abgeschnitten. */
+.personBreit {
+  grid-column: 1 / -1;
+}
+.personBreit .foto {
+  aspect-ratio: auto;
+  max-width: 40rem;
+}
+.initialen {
+  display: grid;
+  place-items: center;
+  height: 100%;
+  font-family: var(--schrift-display);
+  font-size: 3rem;
+  font-weight: 700;
+  color: var(--tinte-3);
+}
+.name {
+  font-family: var(--schrift-display);
+  font-size: 1.5rem;
+  font-weight: 700;
+  letter-spacing: 0.01em;
+}
+.funktion {
+  color: var(--tinte-2);
+}
+.kontakt {
+  margin-top: var(--raum-2);
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--raum-1) var(--raum-3);
+}
+.telefon,
+.email {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--raum-1);
+  min-height: 2.75rem;
+  padding: 0.25rem 0;
+  border: 0;
+  background: none;
+  cursor: pointer;
+  font-weight: 500;
+  text-decoration: none;
+  border-bottom: var(--strich-stark) solid var(--gelb);
+}
+.telefon svg,
+.email svg {
+  width: 1rem;
+  height: 1rem;
+}
+.telefon:hover,
+.email:hover {
+  background: var(--gelb);
+}

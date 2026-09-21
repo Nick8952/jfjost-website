@@ -1,0 +1,184 @@
+.banner {
+  position: fixed;
+  inset-inline: 0;
+  bottom: 0;
+  z-index: var(--ebene-dialog);
+  background: var(--papier);
+  border-top: 6px solid var(--gelb);
+  box-shadow: 0 -12px 40px -20px rgb(0 0 0 / 0.4);
+  padding: var(--raum-4) var(--rand);
+}
+.bannerInnen {
+  width: min(100%, var(--breite-max));
+  margin-inline: auto;
+  display: grid;
+  gap: var(--raum-4);
+}
+@media (min-width: 64rem) {
+  .bannerInnen {
+    grid-template-columns: 1fr auto;
+    align-items: center;
+  }
+}
+.bannerTitel {
+  font-family: var(--schrift-display);
+  font-size: 1.375rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: var(--raum-1);
+}
+.bannerText p {
+  font-size: var(--groesse-klein);
+  color: var(--tinte-2);
+  max-width: 60ch;
+}
+.bannerAktionen {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--raum-2);
+}
+.bannerAktionen .knopf {
+  font-size: 1rem;
+}
+.hintergrund {
+  position: fixed;
+  inset: 0;
+  z-index: var(--ebene-dialog);
+  background: rgb(0 0 0 / 0.55);
+  display: grid;
+  place-items: center;
+  padding: var(--raum-4);
+  overflow-y: auto;
+}
+.dialog {
+  width: min(100%, 40rem);
+  max-height: calc(100dvh - 2 * var(--raum-4));
+  overflow-y: auto;
+  background: var(--papier);
+  border: var(--strich-stark) solid var(--tinte);
+  box-shadow: 12px 12px 0 var(--gelb);
+  padding: var(--raum-5);
+}
+.dialogTitel {
+  font-size: 1.75rem;
+}
+.dialogText {
+  margin: var(--raum-2) 0 var(--raum-4);
+  color: var(--tinte-2);
+}
+.kategorien {
+  display: flex;
+  flex-direction: column;
+  border-top: var(--strich-stark) solid var(--tinte);
+}
+.kategorie {
+  padding: var(--raum-3) 0;
+  border-bottom: var(--strich) solid var(--linie);
+}
+.kategorieKopf {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--raum-3);
+}
+.kategorieTitel {
+  font-weight: 600;
+  min-height: 2.75rem;
+  display: inline-flex;
+  align-items: center;
+  cursor: pointer;
+}
+.immer {
+  font-size: var(--groesse-mini);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--tinte-3);
+}
+.schalter {
+  appearance: none;
+  flex: none;
+  width: 4.25rem;
+  height: 2.75rem;
+  margin: 0;
+  border: var(--strich-stark) solid var(--tinte);
+  background: var(--papier);
+  position: relative;
+  cursor: pointer;
+}
+.schalter::after {
+  content: "";
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  width: 1.5rem;
+  height: calc(2.75rem - 4px - 8px);
+  background: var(--tinte);
+  transition: transform var(--dauer-kurz) var(--kurve);
+}
+.schalter:checked {
+  background: var(--gelb);
+}
+.schalter:checked::after {
+  transform: translateX(calc(4.25rem - 1.5rem - 4px - 8px - 4px));
+}
+.kategorieText {
+  font-size: var(--groesse-klein);
+  color: var(--tinte-2);
+}
+.anbieter {
+  font-size: var(--groesse-mini);
+  color: var(--tinte-3);
+  margin-top: var(--raum-1);
+}
+.aktionen {
+  margin-top: var(--raum-4);
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--raum-2);
+}
+.aktionen .knopf {
+  font-size: 1rem;
+}
+.widerruf {
+  min-height: 2.75rem;
+  padding: 0.5rem 0;
+  border: 0;
+  background: none;
+  cursor: pointer;
+  font-weight: 600;
+  text-decoration: underline;
+  text-decoration-color: var(--fehler);
+  text-decoration-thickness: 2px;
+  color: var(--fehler);
+}
+.meldung {
+  margin-top: var(--raum-3);
+  padding: var(--raum-3);
+  background: var(--beton);
+  border-left: 4px solid var(--gelb);
+  font-weight: 500;
+}
+.status {
+  margin-bottom: var(--raum-4);
+  padding: var(--raum-3);
+  background: var(--beton);
+  border-left: 4px solid var(--tinte);
+}
+.fussnote {
+  margin-top: var(--raum-4);
+  font-size: var(--groesse-mini);
+  color: var(--tinte-3);
+}
+.schliessen {
+  margin-top: var(--raum-4);
+  min-height: 2.75rem;
+  padding: 0.5rem 0;
+  border: 0;
+  background: none;
+  cursor: pointer;
+  text-decoration: underline;
+  font-weight: 500;
+}
+.eingebettet {
+  max-width: 44rem;
+}

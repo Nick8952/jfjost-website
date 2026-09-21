@@ -1,0 +1,82 @@
+.bereich {
+  padding-block: var(--abschnitt);
+  background: var(--papier);
+}
+.kopf {
+  max-width: 52rem;
+  margin-bottom: var(--raum-5);
+}
+.text {
+  margin-top: var(--raum-3);
+  color: var(--tinte-2);
+  max-width: var(--breite-lesen);
+}
+.einbettung {
+  border: var(--strich-stark) solid var(--tinte);
+  background: var(--beton);
+}
+.iframe {
+  display: block;
+  width: 100%;
+  height: min(80vh, 60rem);
+  border: 0;
+  background: var(--papier);
+}
+.unterzeile {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--raum-3);
+  padding: var(--raum-3);
+  border-top: var(--strich) solid var(--linie);
+}
+.stoerung {
+  flex-basis: 100%;
+  font-weight: 500;
+}
+.zurueck {
+  min-height: 2.75rem;
+  padding: 0.5rem 0;
+  border: 0;
+  background: none;
+  cursor: pointer;
+  text-decoration: underline;
+  font-weight: 500;
+}
+.platzhalter {
+  border: var(--strich-stark) dashed var(--linie-stark);
+  background: var(--beton);
+  padding: var(--raum-5);
+  min-height: 22rem;
+  display: grid;
+  place-items: center;
+  background-image: repeating-linear-gradient(135deg, transparent 0 22px, rgb(0 0 0 / 0.03) 22px 24px);
+}
+.platzhalterInnen {
+  max-width: 40rem;
+  text-align: center;
+}
+.platzhalterTitel {
+  font-size: var(--groesse-h3);
+}
+.platzhalterText {
+  margin-top: var(--raum-3);
+  color: var(--tinte-2);
+}
+.aktionen {
+  margin-top: var(--raum-5);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: var(--raum-3);
+}
+.fussnote {
+  margin-top: var(--raum-4);
+  font-size: var(--groesse-mini);
+  color: var(--tinte-3);
+}
+.stand {
+  margin-top: var(--raum-3);
+  font-size: var(--groesse-mini);
+  color: var(--tinte-3);
+}
