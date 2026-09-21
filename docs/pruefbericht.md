@@ -11,7 +11,7 @@ keine Lighthouse-Messung** – das ist nicht erfolgt und wird nicht behauptet.
 |---|---|
 | `npm run typecheck` (inkl. Sanity-Dateien, Seed-Skript) | ✅ keine Fehler |
 | `npm run lint` (eslint-config-next core-web-vitals + typescript) | ✅ 0 Fehler, 0 Warnungen (5 `react-hooks/set-state-in-effect`-Verstösse behoben: useSyncExternalStore, Zustand-an-Pfad, Ableitung beim Rendern) |
-| `npm test` (node:test) | ✅ 20/20: Kontaktdaten, Seitenliste, Homegate nur auf Mieten/Kaufen, keine erfundenen Stellen, 118 Bilder + Varianten vorhanden mit Alt-Text, 13 Referenzblöcke/91 Fotos, keine CHF/m² in Referenzen, Team-Telefonformat, 7 Downloads mit exakter Grösse, Rechtstexte trennen Betreiber, Einwilligungslogik, Pfade |
+| `npm test` (node:test) | ✅ 23/23 (inkl. Linkziel-Allowlist, E-Mail-Kodierung): Kontaktdaten, Seitenliste, Homegate nur auf Mieten/Kaufen, keine erfundenen Stellen, 118 Bilder + Varianten vorhanden mit Alt-Text, 13 Referenzblöcke/91 Fotos, keine CHF/m² in Referenzen, Team-Telefonformat, 7 Downloads mit exakter Grösse, Rechtstexte trennen Betreiber, Einwilligungslogik, Pfade |
 | `npm run build:pages` mit `NEXT_PUBLIC_BASE_PATH=/jfjost-website` | ✅ 18 Seiten statisch, 1013 Dateien |
 | `npm run export:pruefen` | ✅ alle Verweise mit Unterpfad, alle Dateien vorhanden, jede Seite noindex, 404.html vorhanden, keine localhost/Sanity/Token-Spuren |
 | Funktion ohne Sanity-/Vercel-Variablen | ✅ Build und Vorschau ohne `.env` |
@@ -77,6 +77,22 @@ nie als Textfarbe verwendet. Fokus: 3 px #1A4FD6 mit 3 px Offset auf Weiss/Beton
 Landmarks, Skip-Link, Labels, `aria-expanded`, `aria-modal`, `role=status`, Icons `aria-hidden`.
 Nicht geprüft: Screenreader-Ausgabe (VoiceOver/NVDA), 200-%-Zoom auf echten Geräten.
 
-## Deployment
+## Deployment und Live-Prüfung
 
-Siehe Abschnitt «Live» unten (wird nach dem ersten erfolgreichen Workflow-Lauf ergänzt).
+- Repository: https://github.com/Nick8952/jfjost-website (public), GitHub Pages per Workflow
+  (`build_type=workflow`), zwei Läufe grün (typecheck → lint → test → build → export-pruefen → deploy).
+- `npm run live:pruefen -- https://nick8952.github.io/jfjost-website`: ✅ 15 Routen 200 mit noindex
+  und Titel, 897 referenzierte Dateien (CSS, JS, AVIF/WebP, PDFs, Icons) abrufbar, `og:image`/`og:url`
+  je Seite, 404 mit eigener Seite, robots.txt erlaubt Crawlen.
+- Live-Browsertest (390 px, headless Chrome): jede Route direkt aufgerufen **und neu geladen**,
+  Schriften geladen (IBM Plex Sans Variable), kein Überlauf, eigene 404. Ohne GitHub-Login erreichbar.
+- Nach der Codex-Runde erneut geprüft: Homegate-Liste rendert im sandboxed iframe («12 Treffer»),
+  Google-Maps-iframe lädt, mobiles Menü setzt `main`/`footer`/Marke/Skip-Link `inert` (Tab bleibt im
+  Panel), `aria-controls` ohne Leerzeichen, keine doppelten IDs auf der Einstellungsseite,
+  Consent-Audit identisch zum ersten Lauf.
+
+## Nicht geprüft / Grenzen
+
+Echte Geräte (iOS Safari, Android), Screenreader, Lighthouse-Werte, Vercel-Build, Sanity-Studio
+gegen ein Dataset, Seed-Skript, Öffnen des E-Mail-Programms (mailto) auf Endgeräten,
+Nutzungsbedingungen von Homegate.
