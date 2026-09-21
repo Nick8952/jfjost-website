@@ -14,7 +14,7 @@ export function Downloadliste({ downloads }: { downloads: Download[] }) {
   return (
     <ul role="list" className={stile.liste}>
       {downloads.map((d) => {
-        const pfad = oeffentlicherPfad(d.datei);
+        const pfad = /^https?:\/\//.test(d.datei) ? d.datei : oeffentlicherPfad(d.datei);
         return (
           <li key={d.datei} className={stile.eintrag}>
             <FilePdf weight="regular" aria-hidden="true" className={stile.symbol} />

@@ -3,12 +3,12 @@ import { Karte } from "@/components/Karte";
 import { Kontaktformular } from "@/components/Kontaktformular";
 import { Seitenkopf } from "@/components/Seitenkopf";
 import { inhalt } from "@/lib/inhalt";
-import { absolut } from "@/lib/seite-url";
+import { seitenMetadaten } from "@/lib/metadaten";
 import stile from "../seite.module.css";
 
 export async function generateMetadata(): Promise<Metadata> {
   const k = await inhalt.kontakt();
-  return { title: k.seo.titel, description: k.seo.beschreibung, alternates: { canonical: absolut("/kontakt/") } };
+  return seitenMetadaten(k.seo.titel, k.seo.beschreibung, "/kontakt/");
 }
 
 export default async function Kontaktseite() {

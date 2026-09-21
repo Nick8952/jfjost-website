@@ -32,7 +32,7 @@ export default async function Layout({ children }: { children: ReactNode }) {
   return (
     <html lang="de-CH">
       <body>
-        <a href="#inhalt" className="sprung">
+        <a href="#inhalt" className="sprung" data-hinter-menue>
           Zum Inhalt springen
         </a>
         <Kopf einstellungen={einstellungen} />

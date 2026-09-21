@@ -2,12 +2,12 @@ import type { Metadata } from "next";
 import { Fliesstext } from "@/components/Fliesstext";
 import { Seitenkopf } from "@/components/Seitenkopf";
 import { inhalt } from "@/lib/inhalt";
-import { absolut } from "@/lib/seite-url";
+import { seitenMetadaten } from "@/lib/metadaten";
 import stile from "../seite.module.css";
 
 export async function generateMetadata(): Promise<Metadata> {
   const t = await inhalt.rechtstext("impressum");
-  return { title: t.seo.titel, description: t.seo.beschreibung, alternates: { canonical: absolut("/impressum/") } };
+  return seitenMetadaten(t.seo.titel, t.seo.beschreibung, "/impressum/");
 }
 
 export default async function Rechtsseite() {

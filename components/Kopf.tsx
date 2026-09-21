@@ -16,7 +16,7 @@ export function Kopf({ einstellungen }: { einstellungen: WebsiteEinstellungen })
   return (
     <header className={stile.kopf}>
       <div className={`rahmen ${stile.zeile}`}>
-        <Link href="/" className={stile.marke} aria-label="J.F. Jost & Co – zur Startseite">
+        <Link href="/" className={stile.marke} aria-label="J.F. Jost & Co – zur Startseite" data-hinter-menue>
           <Logo groesse={44} className={stile.logo} />
           <span className={stile.wortmarke}>
             <span className={stile.name}>J.F. Jost &amp; Co</span>

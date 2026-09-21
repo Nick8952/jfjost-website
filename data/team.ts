@@ -5,8 +5,9 @@ import type { Teamseite } from "@/lib/inhalt/typen";
  * Quelle: www.jfjost.ch/de/team (identisch mit /de/ueber-uns), Stand 21.09.2026.
  * Namen, Funktionen, Telefonnummern und Fotos wörtlich übernommen (Anzeige als
  * «Vorname Nachname»). E-Mail-Adressen sind auf der bisherigen Website per
- * JavaScript verschleiert und werden hier gleich behandelt: components/EmailKnopf.tsx
- * setzt sie erst beim Klick zusammen, im HTML stehen sie nie im Klartext.
+ * JavaScript verschleiert und werden hier ähnlich behandelt: sie stehen nur
+ * kodiert im HTML (lib/email-kodierung.ts) und werden erst beim Klick dekodiert
+ * (components/EmailKnopf.tsx). Gezieltes Auslesen ist damit nicht ausgeschlossen.
  * Vier Personen haben auf der bisherigen Website kein Foto; hier gibt es dafür
  * keine Ersatzbilder, nur die Initialen.
  * Die leere Kategorie «Baumanagement» der bisherigen Seite (ohne Personen) ist

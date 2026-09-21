@@ -1,14 +1,14 @@
 import type { Metadata } from "next";
 import { Einwilligungseinstellungen } from "@/components/Einwilligung";
 import { Seitenkopf } from "@/components/Seitenkopf";
-import { absolut } from "@/lib/seite-url";
+import { seitenMetadaten } from "@/lib/metadaten";
 import stile from "../seite.module.css";
 
-export const metadata: Metadata = {
-  title: "Cookie- und Datenschutz-Einstellungen",
-  description: "Einwilligungen für externe Inhalte (homegate.ch, Google Maps) ansehen, ändern oder widerrufen.",
-  alternates: { canonical: absolut("/datenschutz-einstellungen/") },
-};
+export const metadata: Metadata = seitenMetadaten(
+  "Cookie- und Datenschutz-Einstellungen",
+  "Einwilligungen für externe Inhalte (homegate.ch, Google Maps) ansehen, ändern oder widerrufen.",
+  "/datenschutz-einstellungen/"
+);
 
 export default function Einstellungsseite() {
   return (

@@ -54,6 +54,10 @@ export function Angebotseinbettung({ angebote, art }: { angebote: ExterneAngebot
               loading="lazy"
               referrerPolicy="strict-origin-when-cross-origin"
               allow=""
+              // Homegate braucht Skripte, eigene Herkunft (Cookies/Storage), Formulare (Filter) und
+              // neue Tabs (Inserat öffnen). Mit allow-same-origin + allow-scripts ist die Sandbox
+              // nur eine schwache Schranke; sie verhindert vor allem Top-Navigation ohne Nutzeraktion.
+              sandbox="allow-scripts allow-same-origin allow-forms allow-popups allow-popups-to-escape-sandbox allow-top-navigation-by-user-activation"
             />
             <div className={stile.unterzeile}>
               {hinweis && (

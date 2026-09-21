@@ -1,5 +1,6 @@
 import Link from "next/link";
 import type { Fliesstext as Fliesstexttyp, Textabsatz, Textspanne } from "@/lib/inhalt/typen";
+import { zielErlaubt } from "@/lib/verweise";
 
 /**
  * Renderer für Portable Text (lokal und aus Sanity identisch). Absichtlich
@@ -12,7 +13,7 @@ function Spanne({ spanne, absatz }: { spanne: Textspanne; absatz: Textabsatz }) 
     else if (mark === "em") inhalt = <em>{inhalt}</em>;
     else {
       const def = absatz.markDefs?.find((d) => d._key === mark);
-      if (def?._type === "link") {
+      if (def?._type === "link" && zielErlaubt(def.href)) {
         const extern = /^(https?:|mailto:|tel:)/.test(def.href);
         inhalt = extern ? (
           <a href={def.href} {...(def.blank && /^https?:/.test(def.href) ? { target: "_blank", rel: "noopener noreferrer" } : {})}>

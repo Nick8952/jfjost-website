@@ -1,6 +1,7 @@
 import { Phone } from "@phosphor-icons/react/dist/ssr";
 import type { Teamabteilung } from "@/lib/inhalt/typen";
 import { Bild } from "./Bild";
+import { emailKodieren } from "@/lib/email-kodierung";
 import { EmailKnopf } from "./EmailKnopf";
 import { Einblenden } from "./Einblenden";
 import stile from "./Teamliste.module.css";
@@ -54,7 +55,7 @@ export function Teamliste({ abteilungen }: { abteilungen: Teamabteilung[] }) {
                     ))}
                     {m.email && (
                       <li>
-                        <EmailKnopf email={m.email} name={m.name} className={stile.email} />
+                        <EmailKnopf kodiert={emailKodieren(m.email)} name={m.name} className={stile.email} />
                       </li>
                     )}
                   </ul>

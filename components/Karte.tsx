@@ -22,7 +22,7 @@ export function Karte({ hinweis, routenLink, adresse }: { hinweis: string; route
   if (aktiv) {
     return (
       <div className={stile.karte}>
-        <iframe className={stile.iframe} src={KARTE_URL} title="Karte: Steinwiesenstrasse 3, 8952 Schlieren (Google Maps)" loading="lazy" referrerPolicy="strict-origin-when-cross-origin" allow="" />
+        <iframe className={stile.iframe} src={KARTE_URL} title="Karte: Steinwiesenstrasse 3, 8952 Schlieren (Google Maps)" loading="lazy" referrerPolicy="strict-origin-when-cross-origin" allow="" sandbox="allow-scripts allow-same-origin allow-popups allow-popups-to-escape-sandbox" />
         <div className={stile.unterzeile}>
           {routen}
           <button type="button" className={stile.zurueck} onClick={() => setzen({ ...einwilligung!.kategorien, karte: false })}>

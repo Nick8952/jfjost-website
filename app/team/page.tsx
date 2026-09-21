@@ -3,12 +3,12 @@ import { Seitenkopf } from "@/components/Seitenkopf";
 import { Teamliste } from "@/components/Teamliste";
 import { Handlungsaufforderung } from "@/components/Bausteine";
 import { inhalt } from "@/lib/inhalt";
-import { absolut } from "@/lib/seite-url";
+import { seitenMetadaten } from "@/lib/metadaten";
 import stile from "../seite.module.css";
 
 export async function generateMetadata(): Promise<Metadata> {
   const t = await inhalt.team();
-  return { title: t.seo.titel, description: t.seo.beschreibung, alternates: { canonical: absolut("/team/") } };
+  return seitenMetadaten(t.seo.titel, t.seo.beschreibung, "/team/");
 }
 
 export default async function Teamseite() {

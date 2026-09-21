@@ -42,11 +42,14 @@ export function Navigation({ punkte, telefon, telefonLink }: { punkte: Navigatio
     };
   }, [offen, pfad]);
 
-  // Mobiles Panel: Seite dahinter nicht scrollen
+  // Mobiles Panel: Seite dahinter weder scrollen noch fokussieren (inert)
   useEffect(() => {
     document.documentElement.style.overflow = offen ? "hidden" : "";
+    const hintergrund = document.querySelectorAll<HTMLElement>("main, footer, [data-hinter-menue]");
+    hintergrund.forEach((el) => (offen ? el.setAttribute("inert", "") : el.removeAttribute("inert")));
     return () => {
       document.documentElement.style.overflow = "";
+      hintergrund.forEach((el) => el.removeAttribute("inert"));
     };
   }, [offen]);
 
@@ -69,20 +72,20 @@ export function Navigation({ punkte, telefon, telefonLink }: { punkte: Navigatio
 
       <div id={menueId} className={[stile.panel, offen ? stile.panelOffen : ""].join(" ")}>
         <ul className={stile.liste} role="list">
-          {punkte.map((p) =>
+          {punkte.map((p, index) =>
             p.unterpunkte ? (
               <li key={p.text} className={stile.gruppe}>
                 <button
                   type="button"
                   className={[stile.gruppenKnopf, gruppeAktiv(p) ? stile.aktiv : ""].join(" ")}
                   aria-expanded={gruppe === p.text}
-                  aria-controls={`${menueId}-${p.text}`}
+                  aria-controls={`${menueId}-gruppe-${index}`}
                   onClick={() => setGruppe((g) => (g === p.text ? null : p.text))}
                 >
                   {p.text}
                   <CaretDown weight="bold" aria-hidden="true" className={stile.caret} />
                 </button>
-                <ul id={`${menueId}-${p.text}`} className={[stile.unterliste, gruppe === p.text ? stile.unterlisteOffen : ""].join(" ")} role="list">
+                <ul id={`${menueId}-gruppe-${index}`} className={[stile.unterliste, gruppe === p.text ? stile.unterlisteOffen : ""].join(" ")} role="list">
                   {p.unterpunkte.map((u) => (
                     <li key={u.ziel}>
                       <Link href={u.ziel} className={[stile.unterpunkt, aktiv(u.ziel) ? stile.aktiv : ""].join(" ")} aria-current={aktiv(u.ziel) ? "page" : undefined}>

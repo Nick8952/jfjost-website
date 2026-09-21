@@ -1,5 +1,8 @@
 import { defineField, defineType } from "sanity";
 
+/** Erlaubte Linkziele: /pfad, https://, mailto:, tel: */
+const ZIEL = /^(\/(?!\/)|https?:\/\/|mailto:|tel:)/i;
+
 /**
  * Gemeinsame Objekte des Studios. Feldnamen und Hilfetexte auf Deutsch, damit
  * der Kunde ohne technische Kenntnisse pflegen kann. Die Typen entsprechen
@@ -54,7 +57,7 @@ export const fliesstext = defineType({
             title: "Link",
             type: "object",
             fields: [
-              defineField({ name: "href", title: "Adresse", type: "string", description: "Interner Pfad (/kontakt/) oder vollständige Adresse (https://…).", validation: (r) => r.required() }),
+              defineField({ name: "href", title: "Adresse", type: "string", description: "Interner Pfad (/kontakt/), https://…, mailto: oder tel:", validation: (r) => r.required().regex(ZIEL, { name: "Linkziel" }) }),
               defineField({ name: "blank", title: "In neuem Tab öffnen", type: "boolean", initialValue: false }),
             ],
           },
@@ -70,7 +73,7 @@ export const verweis = defineType({
   type: "object",
   fields: [
     defineField({ name: "text", title: "Beschriftung", type: "string", validation: (r) => r.required() }),
-    defineField({ name: "ziel", title: "Ziel", type: "string", description: "Interner Pfad (/mieten/), Telefon (tel:+41…) oder Adresse (https://…).", validation: (r) => r.required() }),
+    defineField({ name: "ziel", title: "Ziel", type: "string", description: "Interner Pfad (/mieten/), Telefon (tel:+41…) oder Adresse (https://…).", validation: (r) => r.required().regex(ZIEL, { name: "Linkziel" }) }),
   ],
   preview: { select: { title: "text", subtitle: "ziel" } },
 });
@@ -81,7 +84,7 @@ export const navigationspunkt = defineType({
   type: "object",
   fields: [
     defineField({ name: "text", title: "Beschriftung", type: "string", validation: (r) => r.required() }),
-    defineField({ name: "ziel", title: "Ziel", type: "string", validation: (r) => r.required() }),
+    defineField({ name: "ziel", title: "Ziel", type: "string", validation: (r) => r.required().regex(ZIEL, { name: "Linkziel" }) }),
     defineField({
       name: "unterpunkte",
       title: "Unterpunkte",
@@ -91,7 +94,7 @@ export const navigationspunkt = defineType({
           type: "object",
           fields: [
             defineField({ name: "text", title: "Beschriftung", type: "string", validation: (r) => r.required() }),
-            defineField({ name: "ziel", title: "Ziel", type: "string", validation: (r) => r.required() }),
+            defineField({ name: "ziel", title: "Ziel", type: "string", validation: (r) => r.required().regex(ZIEL, { name: "Linkziel" }) }),
             defineField({ name: "hinweis", title: "Kurzhinweis", type: "string", description: "Eine Zeile unter dem Eintrag im Menü." }),
           ],
           preview: { select: { title: "text", subtitle: "ziel" } },

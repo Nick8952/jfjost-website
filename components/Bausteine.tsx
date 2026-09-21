@@ -6,10 +6,12 @@ import { Bild } from "./Bild";
 import { Downloadliste } from "./Downloadliste";
 import { Einblenden } from "./Einblenden";
 import { Fliesstext } from "./Fliesstext";
+import { zielErlaubt } from "@/lib/verweise";
 import stile from "./Bausteine.module.css";
 
 /** Interne Ziele über <Link>, tel:/mailto:/https: als <a>. */
 export function Aktion({ verweis, klasse }: { verweis: Verweis; klasse: string }) {
+  if (!zielErlaubt(verweis.ziel)) return <span className={klasse}>{verweis.text}</span>;
   const extern = verweis.extern || /^(https?:|mailto:|tel:)/.test(verweis.ziel);
   const inhalt = (
     <>

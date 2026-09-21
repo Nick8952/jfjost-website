@@ -231,10 +231,14 @@ for (const s of seiten) {
 }
 
 console.log("Team …");
+// Eine Person kann in mehreren Abteilungen mit verschiedenen Funktionen stehen
+// (Diego Albertanti: Geschäftsführer / Abteilungsleiter). Damit die Sanity-Quelle
+// dieselbe Darstellung liefert wie die lokale, gibt es je Person UND Funktion ein Dokument.
 const personen = new Map<string, Record<string, unknown>>();
+const personId = (name: string, funktion?: string) => `team-${kennung(name)}${funktion ? `-${kennung(funktion)}` : ""}`;
 for (const a of teamseite.abteilungen) {
   for (const m of a.mitglieder) {
-    const id = `team-${kennung(m.name)}`;
+    const id = personId(m.name, m.funktion);
     if (!personen.has(id)) personen.set(id, { _id: id, _type: "teammitglied", name: m.name, funktion: m.funktion, telefone: m.telefone, email: m.email, bild: await bildHochladen(m.bild) });
   }
 }
@@ -248,7 +252,7 @@ dokumente.push({
   abteilungen: teamseite.abteilungen.map((a, i) => ({
     _key: `abt-${i}`,
     titel: a.titel,
-    mitglieder: a.mitglieder.map((m, j) => ({ _key: `m-${i}-${j}`, _type: "reference", _ref: `team-${kennung(m.name)}` })),
+    mitglieder: a.mitglieder.map((m, j) => ({ _key: `m-${i}-${j}`, _type: "reference", _ref: personId(m.name, m.funktion) })),
   })),
 });
 
@@ -269,6 +273,29 @@ dokumente.push({ _id: "downloadseite", _type: "downloadseite", seo: downloadseit
 dokumente.push({ _id: "kontaktseite", _type: "kontaktseite", ...kontaktseite });
 dokumente.push({ _id: "externeAngebote", _type: "externeAngebote", ...externeAngebote });
 for (const r of rechtstexte) dokumente.push({ _id: `rechtstext-${r.art}`, _type: "rechtstext", ...r });
+
+/* -------------------------------------------------------------- Schlüssel */
+
+/**
+ * Sanity verlangt für jedes Objekt in einem Array ein eindeutiges _key (auch für
+ * Portable-Text-Spans und verschachtelte Listen). Fehlende Keys werden
+ * deterministisch aus dem Pfad vergeben; vorhandene bleiben.
+ */
+function schluesselErgaenzen(wert: unknown, pfad = "k"): unknown {
+  if (Array.isArray(wert)) {
+    return wert.map((eintrag, i) => {
+      const neu = schluesselErgaenzen(eintrag, `${pfad}${i}`);
+      if (neu && typeof neu === "object" && !Array.isArray(neu) && !("_key" in (neu as object))) return { _key: `${pfad}${i}`, ...(neu as object) };
+      return neu;
+    });
+  }
+  if (wert && typeof wert === "object") {
+    const o = wert as Record<string, unknown>;
+    return Object.fromEntries(Object.entries(o).map(([k, v]) => [k, k === "_key" ? v : schluesselErgaenzen(v, `${pfad}-${k}`)]));
+  }
+  return wert;
+}
+for (let i = 0; i < dokumente.length; i += 1) dokumente[i] = schluesselErgaenzen(dokumente[i], `d${i}`) as Record<string, unknown>;
 
 /* --------------------------------------------------------------- Schreiben */
 

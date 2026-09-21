@@ -15,6 +15,7 @@ import stile from "./Einwilligung.module.css";
  *    Widerruf; identische Logik.
  */
 function Kategorienliste({ auswahl, setAuswahl }: { auswahl: Record<Kategorie, boolean>; setAuswahl: (a: Record<Kategorie, boolean>) => void }) {
+  const praefix = useId();
   return (
     <ul role="list" className={stile.kategorien}>
       <li className={stile.kategorie}>
@@ -26,7 +27,7 @@ function Kategorienliste({ auswahl, setAuswahl }: { auswahl: Record<Kategorie, b
       </li>
       {KATEGORIEN.map((k) => {
         const info = KATEGORIE_INFO[k];
-        const id = `einwilligung-${k}`;
+        const id = `${praefix}-${k}`;
         return (
           <li key={k} className={stile.kategorie}>
             <div className={stile.kategorieKopf}>

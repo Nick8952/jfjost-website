@@ -3,7 +3,7 @@ import { notFound } from "next/navigation";
 import { Bausteine } from "@/components/Bausteine";
 import { Seitenkopf } from "@/components/Seitenkopf";
 import { inhalt } from "@/lib/inhalt";
-import { absolut } from "@/lib/seite-url";
+import { seitenMetadaten } from "@/lib/metadaten";
 
 type Props = { params: Promise<{ slug: string }> };
 
@@ -19,7 +19,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { slug } = await params;
   const seite = await inhalt.seite(slug);
   if (!seite) return {};
-  return { title: seite.seo.titel, description: seite.seo.beschreibung, alternates: { canonical: absolut(`/${slug}/`) }, openGraph: { title: seite.seo.titel, description: seite.seo.beschreibung } };
+  return seitenMetadaten(seite.seo.titel, seite.seo.beschreibung, `/${slug}/`);
 }
 
 export default async function Bausteinseite({ params }: Props) {

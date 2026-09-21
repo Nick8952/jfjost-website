@@ -6,13 +6,13 @@ import { Referenzgalerie } from "@/components/Referenzgalerie";
 import { Seitenkopf } from "@/components/Seitenkopf";
 import { Handlungsaufforderung } from "@/components/Bausteine";
 import { inhalt } from "@/lib/inhalt";
-import { absolut } from "@/lib/seite-url";
+import { seitenMetadaten } from "@/lib/metadaten";
 import bausteine from "@/components/Bausteine.module.css";
 import stile from "../seite.module.css";
 
 export async function generateMetadata(): Promise<Metadata> {
   const r = await inhalt.referenzen();
-  return { title: r.seo.titel, description: r.seo.beschreibung, alternates: { canonical: absolut("/referenzen/") } };
+  return seitenMetadaten(r.seo.titel, r.seo.beschreibung, "/referenzen/");
 }
 
 /**

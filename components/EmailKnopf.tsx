@@ -3,23 +3,23 @@
 import { EnvelopeSimple } from "@phosphor-icons/react/dist/ssr";
 
 /**
- * E-Mail-Verweis ohne Klartextadresse im HTML: Die Adresse wird in zwei Teilen
- * übergeben und erst beim Klick zusammengesetzt. Das entspricht dem Schutz der
- * bisherigen Website (JavaScript-Verschleierung) gegen einfache Adress-Sammler.
- * Für Screenreader bleibt der Knopf verständlich («E-Mail an …»).
+ * E-Mail-Verweis ohne Klartextadresse im HTML: Die Adresse kommt kodiert
+ * (umgekehrt + Base64, siehe lib/email-kodierung.ts) und wird erst beim Klick
+ * dekodiert. Das hält einfache Adress-Sammler fern – vergleichbar mit der
+ * JavaScript-Verschleierung der bisherigen Website. Gegen gezieltes Auslesen
+ * schützt es nicht; das ist in docs/uebergabe.md festgehalten.
  */
-export function EmailKnopf({ email, name, className }: { email: string; name: string; className?: string }) {
-  const [nutzer, domain] = email.split("@");
+export function EmailKnopf({ kodiert, name, className }: { kodiert: string; name: string; className?: string }) {
   return (
     <button
       type="button"
       className={className}
-      data-n={nutzer}
-      data-d={domain}
+      data-k={kodiert}
       aria-label={`E-Mail an ${name}`}
       onClick={(e) => {
-        const el = e.currentTarget;
-        window.location.href = `mailto:${el.dataset.n}@${el.dataset.d}`;
+        const roh = e.currentTarget.dataset.k ?? "";
+        const adresse = Array.from(decodeURIComponent(escape(atob(roh)))).reverse().join("");
+        window.location.href = `mailto:${adresse}`;
       }}
     >
       <EnvelopeSimple weight="bold" aria-hidden="true" />
